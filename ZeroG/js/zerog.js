@@ -18,6 +18,9 @@ $( document ).ready(function() {
 	function showZLogo(){
 		$("#centered_welcome").show();
 		TweenMax.from("#zg_logo_medium", 1, {rotationX:180, rotationY:180});
+		TweenMax.from("#welcome_txt", 1, {scale:0, ease:Power2.easeInOut, delay:1});
+		TweenMax.to("#colony_txt", 0.5, {text:{value:"TO THE ZERO G COLONY", delimiter:" "}, ease:Linear.easeNone, delay:2});
+		TweenMax.to("#welcome_p", 1, {text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut", ease:Linear.easeNone, delay:3});
 	}
   
 });
