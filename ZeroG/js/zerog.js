@@ -21,9 +21,9 @@ $( document ).ready(function() {
 		marginBottom:0, marginTop:"-80px", marginLeft:"-190px", position:"fixed",  ease:Power2.easeInOut});
 		
 		$("#centered_welcome").show();
-		TweenMax.from("#welcome_txt", 1, {scale:0, ease:Power2.easeInOut, delay:3});
-		TweenMax.to("#colony_txt", 0.5, {text:{value:"TO THE ZERO G COLONY", delimiter:" "}, ease:Linear.easeNone, delay:4});
-		TweenMax.to("#welcome_p", 1, {text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut", ease:Linear.easeNone, delay:5});
+		TweenMax.from("#welcome_wrapper", 1, {scale:0, ease:Power2.easeInOut, delay:3});
+		TweenMax.to("#centered_welcome", 0.5, {paddingTop:0, ease:Linear.easeNone, delay:5});
+		TweenMax.to("#welcome_p", 0.5, {text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut", ease:Linear.easeNone, delay:5.5});
 		TweenMax.to("#arrows_btn", 1, {display:"block", ease:Power0.easeNone, delay:6});
 		bindScrollEvent();
 	}
