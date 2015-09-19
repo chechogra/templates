@@ -18,7 +18,7 @@ $( document ).ready(function() {
 	function showZLogo(){
 		
 		TweenMax.to("#zg_logo", 3, {width:"129px",  height:"160px", bottom:"auto", right:"auto", left:"50%", top:"50%", marginRight:0, 
-		marginBottom:0, marginTop:"-80px", marginLeft:"-190px", position:"fixed", rotation:"-180", ease:Power2.easeInOut});
+		marginBottom:0, marginTop:"-80px", marginLeft:"-190px", position:"fixed",  ease:Power2.easeInOut});
 		
 		$("#centered_welcome").show();
 		TweenMax.from("#welcome_txt", 1, {scale:0, ease:Power2.easeInOut, delay:3});
@@ -63,10 +63,10 @@ $( document ).ready(function() {
 		unBindScrollEvent();
 		
 		var header_logo_position = ($("#container_reference").position().left + 15) + "px";
-		TweenMax.to("#centered_welcome", 0.5, {display:"none", top: "0", marginTop: "0px", ease:Power2.easeInOut});
-		TweenMax.to("#arrows_btn", 0.5, {display:"none", left:"100%", ease:Power2.easeInOut});
-		TweenMax.to("#zg_logo", 0.5, {width:"40px", height:"50px",display:"none", left:header_logo_position, top:"5px", 
-		marginTop:"0px", marginLeft:"0px", ease:Power2.easeInOut, onComplete: showNavbar});
+		TweenMax.to("#centered_welcome", 1, {display:"none", alpha:0, ease:Power2.easeInOut});
+		TweenMax.to("#arrows_btn", 1, {display:"none", alpha:0, ease:Power2.easeInOut});
+		TweenMax.to("#zg_logo", 1, {width:"40px", height:"50px",display:"none", left:header_logo_position, top:"5px", 
+		marginTop:"0px", marginLeft:"0px", ease:Power2.easeInOut, onComplete: showNavbar, delay:1});
 		
 	}
 	

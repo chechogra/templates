@@ -39,8 +39,7 @@
     font-style: normal;
 }
 
-body{ font-family: "basemonothin","Courier New", Courier, monospace; font-size:13px; background-color: #000; color:#fff; line-height:1.2; 
-overflow-x: hidden; }
+body{ font-family: "basemonothin","Courier New", Courier, monospace; font-size:13px; background-color: #000; color:#fff; line-height:1.2; }
 .m-t-xs{ margin-top:5px; }
 .m-t-sm{ margin-top:10px; }
 .m-t-md{ margin-top:20px; }
