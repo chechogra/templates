@@ -3,9 +3,28 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>ZeroG</title>
+<!--[if gte IE 9]>
+  <style type="text/css">
+    .gradient {
+       filter: none;
+    }
+  </style>
+<![endif]-->
 <link rel="stylesheet" type="text/css" href="css/zerog.css">
 </head>
 <body>
+
+
+<nav id="nav_bar" class="fixed-nav-bar">
+    <div class="container">
+   		<img id="zg_logo_text" src="img/logo_text.jpg"/>
+	</div>
+    <div class="gradient"></div>
+</nav>
+
+<div id="container_reference" class="container"></div>
+
+
 <div id="centered_login">
     <input type="email" id="user_email" name="user-email" placeholder="EMAIL"/>
     <input type="password" id="user_password" name="user-password" placeholder="PASSWORD"/>
@@ -19,6 +38,7 @@
     <h5 id="colony_txt"></h5>
     <p id="welcome_p"></p>
 </div>
+<a id="arrows_btn" href="#"><img src="img/arrows.png" /></a>
 
 <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 <script type="text/javascript" src="js/TweenMax.min.js"></script>
