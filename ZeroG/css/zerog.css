@@ -39,7 +39,8 @@
     font-style: normal;
 }
 
-body{ font-family: "basemonomedium","Courier New", Courier, monospace; font-size:13px; background-color: #000; color:#fff; line-height:1.2;}
+body{ font-family: "basemonomedium","Courier New", Courier, monospace; font-size:13px; background-color: #000; color:#fff; line-height:1.2; 
+overflow-x: hidden; }
 .m-t-xs{ margin-top:5px; }
 .m-t-sm{ margin-top:10px; }
 .m-t-md{ margin-top:20px; }
@@ -75,11 +76,8 @@ textarea:focus, select:focus, textarea:hover, select:hover, input[type="text"]:f
 textarea::-moz-focus-inner, select::-moz-focus-inner, textarea:hover, select:hover, input[type="text"]::-moz-focus-inner, input[type="checkbox"]::-moz-focus-inner, input[type="file"]::-moz-focus-inner, input[type="password"]::-moz-focus-inner, input[type="datetime"]::-moz-focus-inner, input[type="datetime-local"]::-moz-focus-inner, input[type="date"]::-moz-focus-inner, input[type="month"]::-moz-focus-inner, input[type="time"]::-moz-focus-inner, input[type="week"]::-moz-focus-inner, input[type="number"]::-moz-focus-inner, input[type="email"]::-moz-focus-inner, input[type="url"]::-moz-focus-inner, input[type="search"]::-moz-focus-inner, input[type="tel"]::-moz-focus-inner, input[type="color"]::-moz-focus-inner, input[type="radio"]::-moz-focus-inner, .uneditable-input::-moz-focus-inner{ box-shadow: none; outline:none;}
 
 
-#centered_login{ width:240px; height:90px; position: fixed; top: 50%; left: 50%; margin-top: -45px;margin-left: -120px;}
+#centered_login{ width:240px; height:90px; position: fixed; top: 50%; left: 50%; margin-top: -45px;margin-left: -120px; z-index:1000;}
 #centered_login #user_email{ margin-bottom:7px; }
-/*#zg_logo{ width:402px; height:500px;  position: fixed; top: 50%; left: 50%; margin-top: -250px;margin-left: -201px;}*/
-#zg_logo{ width:14px; height:18px;  position: fixed; top: 50%; left: 50%; margin-top: -9px;margin-left: -7px;}
-#zg_logo_medium{ width:129px; height:160px; position:absolute; left:0;}
 #centered_welcome{ width:420px; height:160px; position: fixed; top: 50%; left: 50%; margin-top: -80px; margin-left: -190px; padding-left: 160px; 
 display:none;}
 #centered_welcome #welcome_txt{ font-weight:lighter; font-family:"basemonothin","Courier New", Courier, monospace; font-size:38px; line-height:38px;
@@ -88,10 +86,8 @@ letter-spacing:15px; margin: 30px 0 5px;}
 margin:0;}
 #centered_welcome #welcome_p{ font-weight:lighter; font-family: sans-serif; font-size:11px; color:#797a7a; 
 margin:10px 0px 0px;}
-
-
-
-
+#zg_logo{ position:absolute;  bottom:0; right:0; margin-right:-2px; width:4px; height:5px;}
+#logo_wrapper{ overflow:hidden; position:fixed !important; position:absolute; top:0; right:0; bottom:0; left:0; }
 
 
 
