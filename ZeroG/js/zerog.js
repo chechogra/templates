@@ -21,10 +21,10 @@ $( document ).ready(function() {
 		marginBottom:0, marginTop:"-80px", marginLeft:"-190px", position:"fixed",  ease:Power2.easeInOut});
 		
 		$("#centered_welcome").show();
-		TweenMax.from("#welcome_wrapper", 1, {scale:0, ease:Power2.easeInOut, delay:3});
-		TweenMax.to("#centered_welcome", 0.5, {paddingTop:0, ease:Linear.easeNone, delay:5});
-		TweenMax.to("#welcome_p", 0.5, {text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut", ease:Linear.easeNone, delay:5.5});
-		TweenMax.to("#arrows_btn", 1, {display:"block", ease:Power0.easeNone, delay:6});
+		TweenMax.from("#welcome_wrapper", 0.5, {scale:0, ease:Power2.easeInOut, delay:3});
+		TweenMax.to("#centered_welcome", 0.5, {paddingTop:0, ease:Linear.easeNone, delay:4.5});
+		TweenMax.to("#welcome_p", 0.5, {text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut", ease:Linear.easeNone, delay:5});
+		TweenMax.to("#arrows_btn", 1, {display:"block", ease:Power0.easeNone, delay:5.5});
 		bindScrollEvent();
 	}
 	
@@ -61,11 +61,12 @@ $( document ).ready(function() {
 	
 	function hideSplashScreen(){
 		unBindScrollEvent();
+		var header_logo_position = ($("#container_reference").offset().left + 19) + "px";
 		
-		var header_logo_position = ($("#container_reference").position().left + 15) + "px";
-		TweenMax.to("#centered_welcome", 1, {display:"none", alpha:0, ease:Power2.easeInOut});
 		TweenMax.to("#arrows_btn", 1, {display:"none", alpha:0, ease:Power2.easeInOut});
-		TweenMax.to("#zg_logo", 1, {width:"40px", height:"50px",display:"none", left:header_logo_position, top:"5px", 
+		TweenMax.to("#centered_welcome", 1, {display:"none", alpha:0, ease:Power2.easeInOut});
+		
+		TweenMax.to("#zg_logo", 1, {width:"36px", height:"45px",display:"none", left:header_logo_position, top:"13px", 
 		marginTop:"0px", marginLeft:"0px", ease:Power2.easeInOut, onComplete: showNavbar, delay:1});
 		
 	}

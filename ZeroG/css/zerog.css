@@ -39,7 +39,7 @@
     font-style: normal;
 }
 
-body{ font-family: "basemonothin","Courier New", Courier, monospace; font-size:13px; background-color: #000; color:#fff; line-height:1.2; }
+body{ font-family: "basemonothin","Courier New", Courier, monospace; font-size:13px; background-color: #000; color:#fff; line-height:1.2; margin:0;}
 .m-t-xs{ margin-top:5px; }
 .m-t-sm{ margin-top:10px; }
 .m-t-md{ margin-top:20px; }
@@ -92,7 +92,7 @@ margin:10px 0px 0px;}
 .container{ margin-right: auto; margin-left: auto; padding-right: 15px; padding-left: 15px;}
 
 #nav_bar{ display:none; }
-#zg_logo_text{ height:50px; margin-top: 5px; margin-bottom:10px;}
+#zg_logo_text{ height:50px; margin-top: 10px; margin-bottom:10px;}
 
 .gradient{ width:100%; height:1px;
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#050101+0,7c7c7c+20,ffffff+49,7c7c7c+80,050203+100 */
