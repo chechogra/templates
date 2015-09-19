@@ -1,6 +1,6 @@
 $( document ).ready(function() {
 	var logoWidth= $( window ).width() * 3;
-	var logoHeight= logoWidth * 1.2558081125;
+	var logoHeight= logoWidth * 1.2502230152;
 	var margin_right = "-" + $( window ).width() * 1.8;
 	var margin_bottom = "-" + logoHeight * 0.75;
 
@@ -61,14 +61,18 @@ $( document ).ready(function() {
 	
 	function hideSplashScreen(){
 		unBindScrollEvent();
+		
+		var header_logo_position = ($("#container_reference").position().left + 15) + "px";
 		TweenMax.to("#centered_welcome", 0.5, {display:"none", top: "0", marginTop: "0px", ease:Power2.easeInOut});
 		TweenMax.to("#arrows_btn", 0.5, {display:"none", left:"100%", ease:Power2.easeInOut});
-		TweenMax.to("#zg_logo", 0.5, {display:"none", left:"0", ease:Power2.easeInOut, onComplete: showNavbar});
+		TweenMax.to("#zg_logo", 0.5, {width:"40px", height:"50px",display:"none", left:header_logo_position, top:"5px", 
+		marginTop:"0px", marginLeft:"0px",
+		ease:Power2.easeInOut, onComplete: showNavbar});
 		
 	}
 	
 	function showNavbar(){
-		TweenMax.to("#nav_bar", 0.5, {display:"block", ease:Power2.easeInOut});
+		TweenMax.to("#nav_bar", 0, {display:"block", ease:Power2.easeInOut});
 	}
 	
 	
