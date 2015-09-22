@@ -17,14 +17,14 @@ $( document ).ready(function() {
 	
 	function showZLogo(){
 		
-		TweenMax.to("#zg_logo", 3, {width:"129px",  height:"160px", bottom:"auto", right:"auto", left:"50%", top:"50%", marginRight:0, 
+		TweenMax.to("#zg_logo", 1.5, {width:"129px",  height:"160px", bottom:"auto", right:"auto", left:"50%", top:"50%", marginRight:0, 
 		marginBottom:0, marginTop:"-80px", marginLeft:"-190px", position:"fixed",  ease:Power2.easeInOut});
 		
 		$("#centered_welcome").show();
-		TweenMax.from("#welcome_wrapper", 0.5, {scale:0, ease:Power2.easeInOut, delay:3});
-		TweenMax.to("#centered_welcome", 0.5, {paddingTop:0, ease:Linear.easeNone, delay:4.5});
-		TweenMax.to("#welcome_p", 0.5, {text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut", ease:Linear.easeNone, delay:5});
-		TweenMax.to("#arrows_btn", 1, {display:"block", ease:Power0.easeNone, delay:5.5});
+		TweenMax.from("#welcome_wrapper", 0.5, {alpha:0, ease:Power2.easeInOut, delay:1.5});
+		TweenMax.to("#centered_welcome", 0.3, {paddingTop:0, ease:Linear.easeNone, delay:2.5});
+		TweenMax.to("#welcome_p", 0.5, {text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut", ease:Linear.easeNone, delay:3.5});
+		TweenMax.to("#arrows_btn", 1, {display:"block", ease:Power0.easeNone, delay:4});
 		bindScrollEvent();
 	}
 	
@@ -60,14 +60,16 @@ $( document ).ready(function() {
 	});
 	
 	function hideSplashScreen(){
-		unBindScrollEvent();
+		unBindScrollEvent();	
 		var header_logo_position = ($("#container_reference").offset().left + 19) + "px";
 		
-		TweenMax.to("#arrows_btn", 1, {display:"none", alpha:0, ease:Power2.easeInOut});
-		TweenMax.to("#centered_welcome", 1, {display:"none", alpha:0, ease:Power2.easeInOut});
+		TweenMax.to("#arrows_btn", 0.7, {display:"none", alpha:0, ease:Power2.easeInOut});
+		TweenMax.to("#centered_welcome", 0.7, {display:"none", alpha:0, ease:Power2.easeInOut});
 		
-		TweenMax.to("#zg_logo", 1, {width:"36px", height:"45px",display:"none", left:header_logo_position, top:"13px", 
-		marginTop:"0px", marginLeft:"0px", ease:Power2.easeInOut, onComplete: showNavbar, delay:1});
+		TweenMax.to("#zg_logo", 0.7, {width:"36px", height:"45px",display:"none", left:header_logo_position, top:"13px", 
+		marginTop:"0px", marginLeft:"0px", ease:Power2.easeInOut, onComplete: showNavbar, delay:0.7});
+		TweenMax.from("#nav_bar .gradient", 0.7, {alpha:0, ease:Power2.easeInOut, delay:1.4});
+		
 		
 	}
 	
