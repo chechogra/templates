@@ -27,6 +27,10 @@ body {
 md-content.md-checkedup-theme {
   background-color: #3084B8 !important; }
 
+.main-view > section {
+  min-height: 420px;
+  position: relative; }
+
 /* Directives */
 /* side-nav-bar */
 md-sidenav {
@@ -45,22 +49,34 @@ md-sidenav {
     md-sidenav md-content.sidenav-content md-toolbar img {
       width: 140px;
       margin: 10px 0 0 16px; }
-    md-sidenav md-content.sidenav-content md-list {
+    md-sidenav md-content.sidenav-content md-list.md-checkedup-theme {
       padding: 0;
       overflow: auto; }
-      md-sidenav md-content.sidenav-content md-list.sidenav-list {
+      md-sidenav md-content.sidenav-content md-list.md-checkedup-theme.sidenav-list {
+        -webkit-box-flex: 1;
+        -moz-box-flex: 1;
+        box-flex: 1;
+        -webkit-flex: 1;
+        -moz-flex: 1;
+        -ms-flex: 1;
         flex: 1; }
-      md-sidenav md-content.sidenav-content md-list md-list-item {
+      md-sidenav md-content.sidenav-content md-list.md-checkedup-theme.sidenav-footer md-list-item button {
+        background-color: #F3F3F3; }
+      md-sidenav md-content.sidenav-content md-list.md-checkedup-theme md-list-item {
         position: relative; }
-        md-sidenav md-content.sidenav-content md-list md-list-item.list-item-active button {
+        md-sidenav md-content.sidenav-content md-list.md-checkedup-theme md-list-item.list-item-active button {
           background-color: #E9F1F8; }
-          md-sidenav md-content.sidenav-content md-list md-list-item.list-item-active button:hover {
+          md-sidenav md-content.sidenav-content md-list.md-checkedup-theme md-list-item.list-item-active button:hover {
             background-color: #E9F1F8 !important; }
-        md-sidenav md-content.sidenav-content md-list md-list-item button.md-no-style {
+        md-sidenav md-content.sidenav-content md-list.md-checkedup-theme md-list-item button:hover {
+          background-color: #E9F1F8 !important; }
+        md-sidenav md-content.sidenav-content md-list.md-checkedup-theme md-list-item button.md-no-style {
           padding: 0 20px; }
-        md-sidenav md-content.sidenav-content md-list md-list-item button .md-list-item-inner {
-          min-height: 70px; }
-          md-sidenav md-content.sidenav-content md-list md-list-item button .md-list-item-inner .list-item-account-inner {
+        md-sidenav md-content.sidenav-content md-list.md-checkedup-theme md-list-item button .md-list-item-inner {
+          min-height: 70px;
+          width: 100%; }
+          md-sidenav md-content.sidenav-content md-list.md-checkedup-theme md-list-item button .md-list-item-inner .list-item-account-inner {
+            width: 100%;
             display: -webkit-box;
             display: -moz-box;
             display: box;
@@ -87,9 +103,16 @@ md-sidenav {
             -moz-flex-direction: column;
             flex-direction: column;
             -ms-flex-direction: column; }
-          md-sidenav md-content.sidenav-content md-list md-list-item button .md-list-item-inner p {
+          md-sidenav md-content.sidenav-content md-list.md-checkedup-theme md-list-item button .md-list-item-inner p {
             line-height: 1.1;
             margin: 0;
+            width: 100%;
+            display: inline-block;
+            max-width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            word-wrap: normal;
             -webkit-box-flex: 1;
             -moz-box-flex: 1;
             box-flex: 1;
@@ -97,15 +120,10 @@ md-sidenav {
             -moz-flex: 1;
             -ms-flex: 1;
             flex: 1; }
-            md-sidenav md-content.sidenav-content md-list md-list-item button .md-list-item-inner p.user-label {
+            md-sidenav md-content.sidenav-content md-list.md-checkedup-theme md-list-item button .md-list-item-inner p.user-label {
               color: rgba(50, 128, 186, 0.5);
               font-size: 0.8em;
-              display: inline-block;
-              max-width: 100%;
-              overflow: hidden;
-              text-overflow: ellipsis;
-              white-space: nowrap;
-              word-wrap: normal; }
+              margin: 4px 0 0; }
 
 /* footer-module */
 #footer_steps {
@@ -114,33 +132,66 @@ md-sidenav {
   color: #fff;
   margin: 0;
   position: relative;
+  font-size: 1rem;
   -webkit-box-shadow: 0px -2px 4px 0px #0d336b;
   -moz-box-shadow: 0px -2px 4px 0px #0d336b;
   -ms-box-shadow: 0px -2px 4px 0px #0d336b;
-  -o-box-shadow: 0px -2px 4px 0px #0d336b; }
+  -o-box-shadow: 0px -2px 4px 0px #0d336b;
+  box-shadow: 0px -2px 4px 0px #0d336b; }
+  @media (max-width: 599px) {
+    #footer_steps {
+      padding-top: 5px; } }
   #footer_steps > div {
     margin: 5px 15px 10px; }
     #footer_steps > div .step {
-      padding: 15px 15px; }
+      padding: 12px 15px; }
+      @media (max-width: 599px) {
+        #footer_steps > div .step {
+          -webkit-box-flex: 100;
+          -moz-box-flex: 100;
+          box-flex: 100;
+          -webkit-flex: 100 !important;
+          -moz-flex: 100 !important;
+          -ms-flex: 100 !important;
+          flex: 100 !important;
+          width: 100% !important;
+          min-width: 100% !important;
+          padding: 0 5px; } }
       #footer_steps > div .step.active p {
         opacity: 1; }
+      @media (max-width: 599px) {
+        #footer_steps > div .step div {
+          margin-bottom: 2px; } }
       #footer_steps > div .step div p {
         margin: 0 0 10px;
         opacity: 0.5;
         flex: 0 0 auto;
-        line-height: 1;
+        font-size: 0.875em;
+        line-height: 1.1;
         display: inline-block;
         max-width: 100%;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
         word-wrap: normal; }
+        @media (max-width: 599px) {
+          #footer_steps > div .step div p {
+            -webkit-box-flex: 0;
+            -moz-box-flex: 0;
+            box-flex: 0;
+            -webkit-flex: 0 0 180px;
+            -moz-flex: 0 0 180px;
+            -ms-flex: 0 0 180px;
+            flex: 0 0 180px;
+            margin-bottom: 0px;
+            padding-right: 5px !important; } }
       #footer_steps > div .step div md-progress-linear .md-container {
         height: 7px;
         -webkit-border-radius: 4px;
         -moz-border-radius: 4px;
         -ms-border-radius: 4px;
         -o-border-radius: 4px;
+        border-radius: 4px;
         background-color: #487397 !important; }
         #footer_steps > div .step div md-progress-linear .md-container .md-bar {
           height: 7px; }
