@@ -8,7 +8,7 @@
                     <div class="video-container">
                         <video id="video_player"
                                width="100%"
-                               ng-click="playPause()"
+                               ng-click="toogleVideoPlayer()"
                                ng-show="showVideo"
                                poster="images/video-placeholder.png"
                                src="https://cu-prod.s3.amazonaws.com/slides/primary/CAT_MOD2_S1_GL2_v2_copy.mp4" type="video/mp4"
@@ -17,8 +17,6 @@
                         </video>
                     </div>
                 </section>
-                <div id="daniel">hola esto es una app</div>
-                <div class="ignacio"><span id="daniel">ejemplo</span></div>
             </div>
         </md-content>
         <footer id="footer_steps" ng-init="init()" footer-module></footer>

@@ -6,8 +6,8 @@
         Back
     </h3>
     <span flex></span>
-    <md-button class="md-fab md-primary md-mini md-hue-3" aria-label="Video Player Control">
-        <ng-md-icon icon="play_arrow"></ng-md-icon>
+    <md-button class="md-fab md-primary md-mini md-hue-3" ng-click="toogleVideoPlayer()" aria-label="Video Player Control">
+        <ng-md-icon icon="{{video_player_icon}}" options='{"duration": 300, "rotation": "none", "easing": "sine-in-out"}'></ng-md-icon>
     </md-button>
     <md-button class="md-fab md-primary md-mini" aria-label="Back">
         <ng-md-icon icon="arrow_back"></ng-md-icon>
