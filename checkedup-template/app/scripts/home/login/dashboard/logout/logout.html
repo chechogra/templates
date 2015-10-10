@@ -1,0 +1,24 @@
+<md-dialog class="terms-modal" aria-label="Terms Modal">
+  <form name="logoutForm">
+  <md-toolbar>
+    <div class="md-toolbar-tools" layout="row" layout-align="center center">
+      <h2>Log Out</h2>
+    </div>
+  </md-toolbar>
+  <md-dialog-content style="max-width:800px;max-height:810px; ">
+    <div>
+      <p class="width-100 text-center color-blue">
+        Are you sure you want to log out?
+      </p>
+    </div>
+  </md-dialog-content>
+  <md-dialog-content layout="row" layout-align="center center">
+    <md-button class="width-100" flex-gt-sm="35" ng-click="submit()">
+      Yes
+    </md-button>
+    <md-button class="green-button width-100" flex-gt-sm="35" ng-click="cancel()">
+      No
+    </md-button>
+  </md-dialog-content>
+  </form>
+</md-dialog>

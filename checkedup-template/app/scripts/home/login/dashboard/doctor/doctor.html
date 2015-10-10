@@ -1,0 +1,49 @@
+
+<side-nav style="height:100%"></side-nav>
+<md-toolbar md-theme="checkedup" class="md-hue-2">
+    <div class="md-toolbar-tools">
+        <md-button class="md-icon-button" ng-click="toggleSidenav('left')" hide-gt-md aria-label="Menu">
+            <ng-md-icon icon="menu"></ng-md-icon>
+        </md-button>
+        <h3>
+            My Doctor
+        </h3>
+        <span flex></span>
+    </div>
+</md-toolbar>
+
+
+<section layout="column" layout-gt-sm="row" ng-init="init()">
+
+    <md-card flex-gt-sm="60">
+
+        <md-card-content>
+
+            <div>
+                <p>{{doctor.prefixName + ". " + doctor.firstName + " " + doctor.lastName}}</p>
+            </div>
+
+            <hr>
+
+             <div layout="column">
+                <span>{{doctor.practice.location.addressLine_1}}</span>
+                <span>here go the doctors email....pending...</span>
+                <span>{{doctor.practice.location.phone}}</span>
+             </div>
+
+        </md-card-content>
+
+    </md-card>
+
+    <img src="" width="200" height="200" alt="pending">
+
+</section>
+
+<hr>
+
+<div>
+
+    <h2>Doctor Bio</h2>
+    <p>{{doctor.bio}}</p>
+
+</div>

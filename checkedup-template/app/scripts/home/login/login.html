@@ -1,0 +1,44 @@
+<div class="sign-up-container width-100" layout="column" layout-align="start center">
+    <img src="images/checkedUp-logo.svg" class="sign-up-logo" alt="">
+    <div class="doctor-image">
+        <img src="images/doctor-image.jpg" alt="">
+    </div>
+    <div class="doctor-invitation">
+        Welcome Back to CheckedUp! Don't have account? <span  ng-click="goToRegister()" class="border-bottom">Click Here.</span>
+    </div>
+
+
+
+<!--     LOGIN USER SECTION-->
+    <div class="white-log-sign-in-container" layout="column" layout-align="start center">
+
+        <form name="loginForm" class="width-100" novalidate layout="column" layout-alignn="start start">
+
+            <md-input-container class="width-100">
+                <label>Email Address</label>
+                <input type="email" ng-model="user.email" required>
+            </md-input-container>
+
+            <md-input-container class="width-100">
+                <label>Password</label>
+                <input type="password" ng-model="user.password" required>
+            </md-input-container>
+
+            <span class="width-100" layout="row">
+              <md-button class="green-button width-100" ng-click="login()" flex-gt-sm="45">
+                  GET STARTED
+              </md-button>
+            </span>
+
+        </form>
+    </div>
+
+    <div class="language-container" layout="column" layout-gt-sm="row" layout-align="start center" layout-align-gt-sm="space-between start">
+        <!-- <md-button>Español</md-button> -->
+        <span layout="column" layout-gt-sm="row" layout-align="start center">
+          <md-button ng-click="showForgotPassword($event)">Forgot Password?</md-button>
+          |
+          <md-button ng-click="showTrouble($event)">Trouble logging In?</md-button>
+        </span>
+    </div>
+</div>

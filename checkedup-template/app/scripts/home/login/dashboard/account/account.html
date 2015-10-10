@@ -1,0 +1,49 @@
+<section layout="row" class='height-100'>
+    <div class='height-100'>
+        <side-nav style="height:100%"></side-nav>
+
+    </div>
+
+    <div layout-fill class='height-100'>
+        <md-toolbar md-theme="checkedup" class="md-hue-2">
+            <div class="md-toolbar-tools">
+                <md-button class="md-icon-button" ng-click="toggleSidenav('left')" hide-gt-md aria-label="Menu">
+                    <ng-md-icon icon="menu"></ng-md-icon>
+                </md-button>
+                <h3>
+                    My Account
+                </h3>
+                <span flex></span>
+            </div>
+        </md-toolbar>
+    <md-tabs class='height-100' ng-init="init()">
+      <md-tab label="Info"  >
+
+        <md-tab-content  ng-include="'scripts/home/login/dashboard/account/info/account-info.html'">
+
+        </md-tab-content>
+
+      </md-tab>
+
+
+      <md-tab label="Terms">
+        <md-content ng-include="'scripts/home/login/dashboard/account/terms/terms-of-use.html'">
+
+        </md-content>
+      </md-tab>
+
+
+      <md-tab label="Privacy">
+        <md-content ng-include="'scripts/home/login/dashboard/account/privacy/privacy-policy.html'">
+
+        </md-content>
+      </md-tab>
+
+      <md-tab label="Delete Account">
+        <md-content ng-include="'scripts/home/login/dashboard/account/delete/delete-patient.html'">
+
+        </md-content>
+      </md-tab>
+    </md-tabs>
+</div>
+</section>

@@ -1,0 +1,35 @@
+<section >
+  <md-card>
+    <md-card-content>
+        <form name="userData">
+          <md-input-container>
+            <label>First Name</label>
+            <input type="text" ng-model="user.firstName" required>
+          </md-input-container>
+
+
+          <md-input-container>
+            <label>Last Name</label>
+            <input type="text" ng-model="user.lastName">
+          </md-input-container>
+
+          <md-input-container>
+            <label>Email</label>
+            <input type="email" ng-model="user.email" required>
+          </md-input-container>
+
+
+          <md-input-container>
+            <label>Password</label>
+            <input type="password" ng-model="user.password">
+          </md-input-container>
+
+
+          <md-button class="green-button" ng-click="updatePatient(userData)">
+                SAVE
+          </md-button>
+
+        </form>
+    </md-card-content>
+  </md-card>
+</section>

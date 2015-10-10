@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="bower_components/angular-material-icons/angular-material-icons.css" />
     <!-- endbower -->
     <!-- injector:css -->
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/default.css">
     <!-- endinjector -->
 </head>
 <body ng-app="checkedUpApp" ng-controller="MainCtrl">
@@ -19,9 +19,6 @@
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>
 <![endif]-->
-<p id="test-p">hola mundo</p>
-<span>ejemplo kasjdhf k aksjdfh akjsdhf aakjsdhf </span>
-
 <div ui-view="content" layout-fill></div>
 
 <!-- bower:js -->
@@ -38,6 +35,19 @@
 <!-- endbower -->
 <!-- injector:js -->
 <script src="scripts/app.js"></script>
+<script src="scripts/directives/footer-modules/footer-module-controller.js"></script>
+<script src="scripts/directives/footer-modules/footer-module-directive.js"></script>
+<script src="scripts/directives/navbar-directive/side-nav-bar-directive.js"></script>
+<script src="scripts/directives/navbar-directive/side-nav-controller.js"></script>
+<script src="scripts/home/login/dashboard/account/account-controller.js"></script>
+<script src="scripts/home/login/dashboard/dashboard-controller.js"></script>
+<script src="scripts/home/login/dashboard/doctor/doctor-controller.js"></script>
+<script src="scripts/home/login/dashboard/logout/logout-controller.js"></script>
+<script src="scripts/home/login/dashboard/surgery/surgery-controller.js"></script>
+<script src="scripts/home/login/forgot/forgot-password-controller.js"></script>
+<script src="scripts/home/login/login-controller.js"></script>
+<script src="scripts/home/register-controller.js"></script>
+<script src="scripts/home/terms/terms-dialog-controller.js"></script>
 <script src="scripts/main-controller.js"></script>
 <!-- endinjector -->
 </body>

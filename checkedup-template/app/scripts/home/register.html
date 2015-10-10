@@ -1,0 +1,54 @@
+<div class="sign-up-container width-100" layout="column" layout-align="start center" ng-init="init()">
+
+    <img src="images/checkedUp-logo.svg" class="sign-up-logo" alt="">
+
+    <div class="doctor-image">
+        <img src="images/doctor-image.jpg" alt="">
+    </div>
+
+    <div class="doctor-invitation">
+        <span class="doctor-mame">Dr. Barry</span> has invited you to get educated about <span class="border-bottom">Cataract Surgery</span>
+    </div>
+
+
+    <form name="registerForm"  class="white-log-sign-in-container" layout="column" layout-align="start center">
+
+        <div class="width-100" layout="column" layout-gt-sm="row" layout-align="start center" layout-align-gt-sm="space-between start">
+
+            <md-input-container class="width-100" flex-gt-sm="45">
+                <label>First Name</label>
+                <input type="text" ng-model="user.firstName" required>
+            </md-input-container>
+
+            <md-input-container class="width-100" flex-gt-sm="45">
+                <label>Last Name</label>
+                <input type="text" ng-model="user.lastName" required>
+            </md-input-container>
+
+        </div>
+
+        <md-input-container  class="width-100">
+            <label>Email Address</label>
+            <input type="email" ng-model="user.email" required>
+        </md-input-container>
+
+
+
+        <div class="width-100" layout="column" layout-gt-sm="row" layout-align="start center" layout-align-gt-sm="space-between start">
+            <md-button class="green-button width-100" ng-click="register()" flex-gt-sm="45">GET STARTED</md-button>
+            <span layout="row" layout-align="start center" class="width-100" flex-gt-sm="45">
+              <md-checkbox ng-model="user.agreedToTou"  aria-label="Checkbox 1" >
+                  I consent to
+              </md-checkbox>
+              <md-button class="terms border-bottom" ng-click="showTerms($event)">Terms</md-button>
+            </span>
+        </div>
+
+    </form>
+
+    <div class="language-container" layout="column" layout-gt-sm="row" layout-align="start center" layout-align-gt-sm="space-between start">
+        <!-- <md-button>Español</md-button> -->
+        <md-button ng-click="goToLogin()">Already have an account?</md-button>
+    </div>
+
+</div>
