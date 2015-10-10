@@ -30,7 +30,7 @@
              "600": "#1c5f90",
              "700": "#184F80",
              "800": "#144467",
-             "900": "#103652",
+             "900": "#194976",
              "A100": "#bcd3e4",
              "A200": "#90b6d2",
              "A400": "#4584b3",
@@ -61,7 +61,7 @@
          $mdThemingProvider.theme('checkedup').primaryPalette('Primary', {
              'hue-1': '100',
              'hue-2': '700',
-             'hue-3': 'A200'
+             'hue-3': '900'
          }).accentPalette('Accent', {'default': '500'});
          $mdThemingProvider.setDefaultTheme('checkedup');
 
