@@ -1,26 +1,7 @@
-<section layout='row' flex style="height:100%" ng-init="init()">
-    <side-nav style="height:100%"></side-nav>
+<section layout='row' flex ng-init="init()">
+    <side-nav></side-nav>
     <div layout="column" class="relative" layout-fill role="main">
-        <md-toolbar md-theme="checkedup" class="md-hue-2">
-            <div class="md-toolbar-tools">
-                <md-button class="md-icon-button" ng-click="toggleSidenav('left')" hide-gt-md aria-label="Menu">
-                    <ng-md-icon icon="menu"></ng-md-icon>
-                </md-button>
-                <h3>
-                    Back
-                </h3>
-                <span flex></span>
-                <md-button id="play_btn" class="md-fab md-primary md-mini md-hue-3" aria-label="Back">
-                    <ng-md-icon icon="play_arrow"></ng-md-icon>
-                </md-button>
-                <md-button class="md-fab md-primary md-mini" aria-label="Back">
-                    <ng-md-icon icon="arrow_back"></ng-md-icon>
-                </md-button>
-                <md-button class="md-fab md-primary md-mini" aria-label="Next">
-                    <ng-md-icon icon="arrow_forward"></ng-md-icon>
-                </md-button>
-            </div>
-        </md-toolbar>
+        <md-toolbar md-theme="checkedup" class="md-hue-2" tool-bar></md-toolbar>
         <md-content class="content-dashboard" flex>
             <div md-scroll-y layout="column">
                 <section id="video_section" class="linear-bg" layout="row" layout-align="center start" layout-wrap>
@@ -41,30 +22,8 @@
             </div>
         </md-content>
         <footer id="footer_steps" ng-init="init()" footer-module></footer>
-
     </div>
 </section>
-
-<!--<navbar class="md-whiteframe-z1 width-100" layout="row" layout-align="space-between center">
-
-    <md-button class="green-button" ng-click="playPause()">play - pause</md-button>
-
-</navbar>
-
-
-<div class="video-container width-100" layout="column" layout-align="center center" ng-init="init()">
-    <div class="videoWrapper">
-        <video id="video1"
-               ng-click="playPause()"
-               ng-show="showVideo"
-               poster="images/video-placeholder.png"
-               src="https://cu-prod.s3.amazonaws.com/slides/primary/CAT_MOD2_S1_GL2_v2_copy.mp4" type="video/mp4"
-               webkit-playsinline>
-            Your browser does not support HTML5 video.
-        </video>
-    </div>
-
-</div>-->
 
 
 

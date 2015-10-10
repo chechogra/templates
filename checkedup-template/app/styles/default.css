@@ -29,7 +29,8 @@ md-content.md-checkedup-theme {
 
 .main-view > section {
   min-height: 420px;
-  position: relative; }
+  position: relative;
+  height: 100%; }
 
 /* Directives */
 /* md-toolbar */

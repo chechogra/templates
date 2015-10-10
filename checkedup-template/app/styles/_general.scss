@@ -1,0 +1,13 @@
+@include font-face($font, '../fonts/avenirnextltpro/AvenirNextLTPro-Regular', normal, normal, $file-formats: eot ttf woff);
+@include font-face($font, '../fonts/avenirnextltpro/AvenirNextLTPro-Bold', bold, normal, $file-formats: eot woff2 woff);
+
+/* General Settings*/
+html{ font-size: $default-font-size; }
+body, html{ width: 100%; height: 100%;}
+body{ padding: 0; margin: 0; font-family: $font-stack; font-weight: normal; font-style: normal; font-size: 1em; }
+md-content{
+  &.md-checkedup-theme{  background-color: $background-color !important; }
+}
+.main-view{
+  >section{ min-height: 420px; position: relative; height: 100%;}
+}
