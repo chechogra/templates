@@ -1,4 +1,33 @@
-<div class="sign-up-container width-100" layout="column" layout-align="start center">
+<section class="login-section dark" layout='row' layout-align="center start" flex ng-init="init()">
+    <div class="login-container dark" layout='column' flex layout-align="start center">
+        <div class="credentials-top">
+            <img class="checkedup-logo" flex src="images/checkedup-logo.svg" alt="CheckedUp logo">
+            <img class="doctor-rounded" src="images/doctor-img-square.png" alt="Doctor image">
+        </div>
+        <div class="credentials-bottom">
+            <p>Welcome back to CheckedUp! Don’t have an account? <md-button id="go_register_btn">Click here</md-button></p>
+            <md-whiteframe class="md-whiteframe-1dp" flex layout="column" layout-align="center center">
+                <form>
+                    <md-input-container>
+                        <label>Email</label>
+                        <input type="email" ng-model="user.email" required>
+                    </md-input-container>
+                    <md-input-container>
+                        <label>Password</label>
+                        <input type="password" ng-model="user.password" required>
+                    </md-input-container>
+                    <div class="credentials-actions" layout="row" layout-sm="column" layout-align="start center" layout-align-sm="center start">
+                        <md-button class="md-raised md-accent" flex-order="1" flex-order-sm="2" ng-click="login()">GET STARTED</md-button>
+                    </div>
+                </form>
+            </md-whiteframe>
+            <div class="secondary-actions" layout="row" layout-align="end center">
+                <md-button ng-click="goToLogin()">Already have an account?</md-button>
+            </div>
+        </div>
+    </div>
+</section>
+<!--<div class="sign-up-container width-100" layout="column" layout-align="start center">
     <img src="images/checkedUp-logo.svg" class="sign-up-logo" alt="">
     <div class="doctor-image">
         <img src="images/doctor-image.jpg" alt="">
@@ -7,9 +36,6 @@
         Welcome Back to CheckedUp! Don't have account? <span  ng-click="goToRegister()" class="border-bottom">Click Here.</span>
     </div>
 
-
-
-<!--     LOGIN USER SECTION-->
     <div class="white-log-sign-in-container" layout="column" layout-align="start center">
 
         <form name="loginForm" class="width-100" novalidate layout="column" layout-alignn="start start">
@@ -34,44 +60,10 @@
     </div>
 
     <div class="language-container" layout="column" layout-gt-sm="row" layout-align="start center" layout-align-gt-sm="space-between start">
-        <!-- <md-button>Español</md-button> -->
         <span layout="column" layout-gt-sm="row" layout-align="start center">
           <md-button ng-click="showForgotPassword($event)">Forgot Password?</md-button>
           |
           <md-button ng-click="showTrouble($event)">Trouble logging In?</md-button>
         </span>
     </div>
-</div>
-
-<!--<section class="login-section dark" layout='row' layout-align="center start" flex ng-init="init()">
-    <div class="login-container dark" layout='column' flex layout-align="start center">
-        <div class="credentials-top">
-            <img class="checkedup-logo" flex src="images/checkedup-logo.svg" alt="CheckedUp logo">
-            <img class="doctor-rounded" src="images/doctor-img-square.png" alt="Doctor image">
-        </div>
-        <div class="credentials-bottom">
-            <p>Welcome back</p>
-            <md-whiteframe class="md-whiteframe-1dp" flex layout="column" layout-align="center center">
-                <form>
-                    <md-input-container flex>
-                        <label>First Name</label>
-                        <input type="text" ng-model="user.firstName" required>
-                    </md-input-container>
-
-                    <md-input-container>
-                        <label>Email</label>
-                        <input type="email" ng-model="user.email" required>
-                    </md-input-container>
-                    <div class="credentials-actions" layout="row" layout-sm="column" layout-align="start center" layout-align-sm="center start">
-                        <md-button class="md-raised md-accent" flex-order="1" flex-order-sm="2">GET STARTED</md-button>
-                        <div class="terms-wrapper" layout="row" flex-order="2" flex-order-sm="1">
-                            <md-checkbox id="terms_checkbox" aria-label="Terms">I consent to </md-checkbox>
-                            <a id="terms_btn" ng-click="showTerms($event)">Terms</a>
-                        </div>
-                    </div>
-                </form>
-            </md-whiteframe>
-        </div>
-
-    </div>
-</section>-->
+</div>-->

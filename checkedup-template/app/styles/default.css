@@ -294,6 +294,13 @@ md-sidenav {
             text-align: left;
             text-justify: inter-word;
             font-size: 0.8em; } }
+        .login-section .login-container .credentials-bottom p #go_register_btn, .login-section .register-container .credentials-bottom p #go_register_btn, .register-section .login-container .credentials-bottom p #go_register_btn, .register-section .register-container .credentials-bottom p #go_register_btn {
+          margin: 0;
+          padding: 0px 2px;
+          line-height: 26px;
+          height: 26px;
+          min-height: 26px;
+          font-weight: bold; }
       .login-section .login-container .credentials-bottom md-whiteframe, .login-section .register-container .credentials-bottom md-whiteframe, .register-section .login-container .credentials-bottom md-whiteframe, .register-section .register-container .credentials-bottom md-whiteframe {
         background-color: #fff;
         -webkit-border-radius: 7px;
