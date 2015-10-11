@@ -1,5 +1,5 @@
 @include font-face($font, '../fonts/avenirnextltpro/AvenirNextLTPro-Regular', normal, normal, $file-formats: eot ttf woff);
-@include font-face($font, '../fonts/avenirnextltpro/AvenirNextLTPro-Bold', bold, normal, $file-formats: eot woff2 woff);
+@include font-face($font, '../fonts/avenirnextltpro/AvenirNextLTPro-Bold', bold, normal, $file-formats: eot ttf woff);
 
 /* General Settings*/
 html{ font-size: $default-font-size; }

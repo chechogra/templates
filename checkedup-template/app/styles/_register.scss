@@ -1,8 +1,11 @@
-.login-section{
+.login-section, .register-section{
   font-size: rem(22);
-  .login-container{
+  .login-container, .register-container{
     width: 100%;
-    background-color: $background-color-dark;
+    background-color: $background-color;
+    &.dark{
+      background-color: $background-color-dark;
+    }
     .credentials-top{
       background-color: $background-color;
       width: 100%;
@@ -10,9 +13,16 @@
       position: relative;
       padding-bottom: 70px;
       padding-top: 35px;
+      @include breakpoint($phone-max-width) {
+        padding-bottom: 50px;
+        padding-top: 20px;
+      }
       .checkedup-logo{
         width: 160px;
         height: auto;
+        @include breakpoint($phone-max-width) {
+          width: 120px;
+        }
       }
       .doctor-rounded{
         width: 90px;
@@ -25,29 +35,71 @@
         margin-left: -45px;
         @include prefixer(box-sizing, border-box, $vendors);
         background-color: white;
+        @include breakpoint($phone-max-width) {
+          width: 80px;
+          height: 80px;
+          margin-left: -40px;
+          bottom: -40px;
+        }
       }
     }
     .credentials-bottom{
-      padding: 80px 25px 50px;
-      max-width: 600px;
+      max-width: $credentials-container-width;
       width: 100%;
       @include prefixer(box-sizing, border-box, $vendors);
+      padding: 65px 25px 50px;
+      @include breakpoint($phone-max-width) {
+        padding: 45px 25px 30px;
+      }
+      p{
+        font-size: 0.9em;
+        margin-left: 25px;
+        margin-right: 25px;
+        text-align: justify;
+        text-justify: inter-word;
+        @include breakpoint($phone-max-width) {
+          margin-left: 0px;
+          margin-right: 0px;
+          text-align: left;
+          text-justify: inter-word;
+          font-size: 0.8em;
+        }
+      }
       md-whiteframe{
         background-color: #fff;
-        padding: 40px;
         @include prefixer(border-radius,  7px, $vendors);
+        padding: 30px 40px 40px;
+        @include breakpoint($phone-max-width) {
+          padding: 20px 30px 30px;
+        }
         form{
           width: 100%;
           .credentials-actions{
-            #terms_checkbox{
+            .terms-wrapper{
               color: rgba(0, 0, 0, 0.5);
-              margin-right: 0;
               font-size: 0.9em;
+              @include prefixer(box-sizing, border-box, $vendors);
+              #terms_checkbox{ margin-right: 0; margin-left: 0;}
+              #terms_btn{
+                margin: 8px 0;
+                cursor: pointer;
+                line-height: 26px;
+                padding-left: 3px;
+                font-weight: bold;
+                color: rgba(0, 0, 0, 0.4);
+                &:hover{
+                  color: $accent-color;
+                }
+              }
             }
-            .md-button{
-              min-width: 180px;
-            }
+            .md-button{ min-width: 180px; margin-left: 0; margin-right: 30px; }
           }
+        }
+      }
+      .secondary-actions{
+        padding: 10px 0 30px;
+        .md-button{
+          font-weight: bold;
         }
       }
     }

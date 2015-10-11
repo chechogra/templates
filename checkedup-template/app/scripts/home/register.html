@@ -1,11 +1,12 @@
-<section class="login-section dark" layout='row' layout-align="center start" flex ng-init="init()">
-    <div class="login-container" layout='column' flex layout-align="start center">
+<section class="register-section" layout='row' layout-align="center start" flex ng-init="init()">
+    <div class="register-container" layout='column' flex layout-align="start center">
         <div class="credentials-top">
             <img class="checkedup-logo" flex src="images/checkedup-logo.svg" alt="CheckedUp logo">
             <img class="doctor-rounded" src="images/doctor-img-square.png" alt="Doctor image">
         </div>
         <div class="credentials-bottom">
-            <p>Welcome back</p>
+            <p><span class="doctor-mame">Dr. Barry</span> has invited you to get educated about <b><span class="surgery-name">Cataract Surgery</span></b>.
+                Check that your info is correct and click <b>&quot;Get Started&quot;</b>.</p>
             <md-whiteframe class="md-whiteframe-1dp" flex layout="column" layout-align="center center">
                 <form>
                     <md-input-container flex>
@@ -19,10 +20,16 @@
                     </md-input-container>
                     <div class="credentials-actions" layout="row" layout-sm="column" layout-align="start center" layout-align-sm="center start">
                         <md-button class="md-raised md-accent" flex-order="1" flex-order-sm="2">GET STARTED</md-button>
-                        <md-checkbox id="terms_checkbox" aria-label="Terms" flex-order="2" flex-order-sm="1">I consent to <a ng-click="showTerms($event)">Terms</a></md-checkbox>
+                        <div class="terms-wrapper" layout="row" flex-order="2" flex-order-sm="1">
+                            <md-checkbox id="terms_checkbox" aria-label="Terms">I consent to </md-checkbox>
+                            <a id="terms_btn" ng-click="showTerms($event)">Terms</a>
+                        </div>
                     </div>
                 </form>
             </md-whiteframe>
+            <div class="secondary-actions" layout="row" layout-align="end center">
+                <md-button ng-click="goToLogin()">Already have an account?</md-button>
+            </div>
         </div>
 
     </div>

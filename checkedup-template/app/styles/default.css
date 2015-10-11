@@ -7,7 +7,7 @@
   font-family: AvenirNextLTPro;
   font-style: normal;
   font-weight: bold;
-  src: url("../fonts/avenirnextltpro/AvenirNextLTPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/avenirnextltpro/AvenirNextLTPro-Bold.woff2") format("woff2"), url("../fonts/avenirnextltpro/AvenirNextLTPro-Bold.woff") format("woff"); }
+  src: url("../fonts/avenirnextltpro/AvenirNextLTPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/avenirnextltpro/AvenirNextLTPro-Bold.woff") format("woff"), url("../fonts/avenirnextltpro/AvenirNextLTPro-Bold.ttf") format("truetype"); }
 /* General Settings*/
 html {
   font-size: 16px; }
@@ -220,22 +220,31 @@ md-sidenav {
     outline: 0;
     opacity: 0.99; }
 
-.login-section {
+.login-section, .register-section {
   font-size: 1.375rem; }
-  .login-section .login-container {
+  .login-section .login-container, .login-section .register-container, .register-section .login-container, .register-section .register-container {
     width: 100%;
-    background-color: #18517F; }
-    .login-section .login-container .credentials-top {
+    background-color: #3084B8; }
+    .login-section .login-container.dark, .login-section .register-container.dark, .register-section .login-container.dark, .register-section .register-container.dark {
+      background-color: #18517F; }
+    .login-section .login-container .credentials-top, .login-section .register-container .credentials-top, .register-section .login-container .credentials-top, .register-section .register-container .credentials-top {
       background-color: #3084B8;
       width: 100%;
       text-align: center;
       position: relative;
       padding-bottom: 70px;
       padding-top: 35px; }
-      .login-section .login-container .credentials-top .checkedup-logo {
+      @media (max-width: 599px) {
+        .login-section .login-container .credentials-top, .login-section .register-container .credentials-top, .register-section .login-container .credentials-top, .register-section .register-container .credentials-top {
+          padding-bottom: 50px;
+          padding-top: 20px; } }
+      .login-section .login-container .credentials-top .checkedup-logo, .login-section .register-container .credentials-top .checkedup-logo, .register-section .login-container .credentials-top .checkedup-logo, .register-section .register-container .credentials-top .checkedup-logo {
         width: 160px;
         height: auto; }
-      .login-section .login-container .credentials-top .doctor-rounded {
+        @media (max-width: 599px) {
+          .login-section .login-container .credentials-top .checkedup-logo, .login-section .register-container .credentials-top .checkedup-logo, .register-section .login-container .credentials-top .checkedup-logo, .register-section .register-container .credentials-top .checkedup-logo {
+            width: 120px; } }
+      .login-section .login-container .credentials-top .doctor-rounded, .login-section .register-container .credentials-top .doctor-rounded, .register-section .login-container .credentials-top .doctor-rounded, .register-section .register-container .credentials-top .doctor-rounded {
         width: 90px;
         height: 90px;
         -webkit-border-radius: 50%;
@@ -254,30 +263,77 @@ md-sidenav {
         -o-box-sizing: border-box;
         box-sizing: border-box;
         background-color: white; }
-    .login-section .login-container .credentials-bottom {
-      padding: 80px 25px 50px;
-      max-width: 600px;
+        @media (max-width: 599px) {
+          .login-section .login-container .credentials-top .doctor-rounded, .login-section .register-container .credentials-top .doctor-rounded, .register-section .login-container .credentials-top .doctor-rounded, .register-section .register-container .credentials-top .doctor-rounded {
+            width: 80px;
+            height: 80px;
+            margin-left: -40px;
+            bottom: -40px; } }
+    .login-section .login-container .credentials-bottom, .login-section .register-container .credentials-bottom, .register-section .login-container .credentials-bottom, .register-section .register-container .credentials-bottom {
+      max-width: 700px;
       width: 100%;
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
       -ms-box-sizing: border-box;
       -o-box-sizing: border-box;
-      box-sizing: border-box; }
-      .login-section .login-container .credentials-bottom md-whiteframe {
+      box-sizing: border-box;
+      padding: 65px 25px 50px; }
+      @media (max-width: 599px) {
+        .login-section .login-container .credentials-bottom, .login-section .register-container .credentials-bottom, .register-section .login-container .credentials-bottom, .register-section .register-container .credentials-bottom {
+          padding: 45px 25px 30px; } }
+      .login-section .login-container .credentials-bottom p, .login-section .register-container .credentials-bottom p, .register-section .login-container .credentials-bottom p, .register-section .register-container .credentials-bottom p {
+        font-size: 0.9em;
+        margin-left: 25px;
+        margin-right: 25px;
+        text-align: justify;
+        text-justify: inter-word; }
+        @media (max-width: 599px) {
+          .login-section .login-container .credentials-bottom p, .login-section .register-container .credentials-bottom p, .register-section .login-container .credentials-bottom p, .register-section .register-container .credentials-bottom p {
+            margin-left: 0px;
+            margin-right: 0px;
+            text-align: left;
+            text-justify: inter-word;
+            font-size: 0.8em; } }
+      .login-section .login-container .credentials-bottom md-whiteframe, .login-section .register-container .credentials-bottom md-whiteframe, .register-section .login-container .credentials-bottom md-whiteframe, .register-section .register-container .credentials-bottom md-whiteframe {
         background-color: #fff;
-        padding: 40px;
         -webkit-border-radius: 7px;
         -moz-border-radius: 7px;
         -ms-border-radius: 7px;
         -o-border-radius: 7px;
-        border-radius: 7px; }
-        .login-section .login-container .credentials-bottom md-whiteframe form {
+        border-radius: 7px;
+        padding: 30px 40px 40px; }
+        @media (max-width: 599px) {
+          .login-section .login-container .credentials-bottom md-whiteframe, .login-section .register-container .credentials-bottom md-whiteframe, .register-section .login-container .credentials-bottom md-whiteframe, .register-section .register-container .credentials-bottom md-whiteframe {
+            padding: 20px 30px 30px; } }
+        .login-section .login-container .credentials-bottom md-whiteframe form, .login-section .register-container .credentials-bottom md-whiteframe form, .register-section .login-container .credentials-bottom md-whiteframe form, .register-section .register-container .credentials-bottom md-whiteframe form {
           width: 100%; }
-          .login-section .login-container .credentials-bottom md-whiteframe form .credentials-actions #terms_checkbox {
+          .login-section .login-container .credentials-bottom md-whiteframe form .credentials-actions .terms-wrapper, .login-section .register-container .credentials-bottom md-whiteframe form .credentials-actions .terms-wrapper, .register-section .login-container .credentials-bottom md-whiteframe form .credentials-actions .terms-wrapper, .register-section .register-container .credentials-bottom md-whiteframe form .credentials-actions .terms-wrapper {
             color: rgba(0, 0, 0, 0.5);
-            margin-right: 0;
-            font-size: 0.9em; }
-          .login-section .login-container .credentials-bottom md-whiteframe form .credentials-actions .md-button {
-            min-width: 180px; }
+            font-size: 0.9em;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+            -o-box-sizing: border-box;
+            box-sizing: border-box; }
+            .login-section .login-container .credentials-bottom md-whiteframe form .credentials-actions .terms-wrapper #terms_checkbox, .login-section .register-container .credentials-bottom md-whiteframe form .credentials-actions .terms-wrapper #terms_checkbox, .register-section .login-container .credentials-bottom md-whiteframe form .credentials-actions .terms-wrapper #terms_checkbox, .register-section .register-container .credentials-bottom md-whiteframe form .credentials-actions .terms-wrapper #terms_checkbox {
+              margin-right: 0;
+              margin-left: 0; }
+            .login-section .login-container .credentials-bottom md-whiteframe form .credentials-actions .terms-wrapper #terms_btn, .login-section .register-container .credentials-bottom md-whiteframe form .credentials-actions .terms-wrapper #terms_btn, .register-section .login-container .credentials-bottom md-whiteframe form .credentials-actions .terms-wrapper #terms_btn, .register-section .register-container .credentials-bottom md-whiteframe form .credentials-actions .terms-wrapper #terms_btn {
+              margin: 8px 0;
+              cursor: pointer;
+              line-height: 26px;
+              padding-left: 3px;
+              font-weight: bold;
+              color: rgba(0, 0, 0, 0.4); }
+              .login-section .login-container .credentials-bottom md-whiteframe form .credentials-actions .terms-wrapper #terms_btn:hover, .login-section .register-container .credentials-bottom md-whiteframe form .credentials-actions .terms-wrapper #terms_btn:hover, .register-section .login-container .credentials-bottom md-whiteframe form .credentials-actions .terms-wrapper #terms_btn:hover, .register-section .register-container .credentials-bottom md-whiteframe form .credentials-actions .terms-wrapper #terms_btn:hover {
+                color: #2DB276; }
+          .login-section .login-container .credentials-bottom md-whiteframe form .credentials-actions .md-button, .login-section .register-container .credentials-bottom md-whiteframe form .credentials-actions .md-button, .register-section .login-container .credentials-bottom md-whiteframe form .credentials-actions .md-button, .register-section .register-container .credentials-bottom md-whiteframe form .credentials-actions .md-button {
+            min-width: 180px;
+            margin-left: 0;
+            margin-right: 30px; }
+      .login-section .login-container .credentials-bottom .secondary-actions, .login-section .register-container .credentials-bottom .secondary-actions, .register-section .login-container .credentials-bottom .secondary-actions, .register-section .register-container .credentials-bottom .secondary-actions {
+        padding: 10px 0 30px; }
+        .login-section .login-container .credentials-bottom .secondary-actions .md-button, .login-section .register-container .credentials-bottom .secondary-actions .md-button, .register-section .login-container .credentials-bottom .secondary-actions .md-button, .register-section .register-container .credentials-bottom .secondary-actions .md-button {
+          font-weight: bold; }
 
 /*# sourceMappingURL=default.css.map */
