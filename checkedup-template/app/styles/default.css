@@ -24,13 +24,18 @@ body {
   font-style: normal;
   font-size: 1em; }
 
-md-content.md-checkedup-theme {
-  background-color: #3084B8 !important; }
-
 .main-view > section {
   min-height: 420px;
   position: relative;
-  height: 100%; }
+  height: 100%;
+  background-color: #3084B8 !important;
+  color: white; }
+  .main-view > section.dark {
+    background-color: #18517F !important; }
+
+md-input-container.md-checkedup-theme .md-input {
+  color: #3282B8;
+  border-color: rgba(0, 0, 0, 0.32); }
 
 /* Directives */
 /* md-toolbar */
@@ -214,5 +219,65 @@ md-sidenav {
     background-size: 100% 100%;
     outline: 0;
     opacity: 0.99; }
+
+.login-section {
+  font-size: 1.375rem; }
+  .login-section .login-container {
+    width: 100%;
+    background-color: #18517F; }
+    .login-section .login-container .credentials-top {
+      background-color: #3084B8;
+      width: 100%;
+      text-align: center;
+      position: relative;
+      padding-bottom: 70px;
+      padding-top: 35px; }
+      .login-section .login-container .credentials-top .checkedup-logo {
+        width: 160px;
+        height: auto; }
+      .login-section .login-container .credentials-top .doctor-rounded {
+        width: 90px;
+        height: 90px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        border-radius: 50%;
+        border: 4px solid #fff;
+        position: absolute;
+        bottom: -45px;
+        left: 50%;
+        margin-left: -45px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        box-sizing: border-box;
+        background-color: white; }
+    .login-section .login-container .credentials-bottom {
+      padding: 80px 25px 50px;
+      max-width: 600px;
+      width: 100%;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      -o-box-sizing: border-box;
+      box-sizing: border-box; }
+      .login-section .login-container .credentials-bottom md-whiteframe {
+        background-color: #fff;
+        padding: 40px;
+        -webkit-border-radius: 7px;
+        -moz-border-radius: 7px;
+        -ms-border-radius: 7px;
+        -o-border-radius: 7px;
+        border-radius: 7px; }
+        .login-section .login-container .credentials-bottom md-whiteframe form {
+          width: 100%; }
+          .login-section .login-container .credentials-bottom md-whiteframe form .credentials-actions #terms_checkbox {
+            color: rgba(0, 0, 0, 0.5);
+            margin-right: 0;
+            font-size: 0.9em; }
+          .login-section .login-container .credentials-bottom md-whiteframe form .credentials-actions .md-button {
+            min-width: 180px; }
 
 /*# sourceMappingURL=default.css.map */

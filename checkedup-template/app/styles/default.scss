@@ -9,13 +9,17 @@ $navbar-width:250px;
 $vendors: webkit moz ms o spec;
 $progress-bar-height: 7px;
 $background-color: #3084B8;
+$background-color-dark: #18517F;
 $hover-color-sidenav: #E9F1F8;
 $dark-primary-color: #E9F1F8;
+$input-color: #3282B8;
 $phone-max-width: (max-width 599px);
 
 @import "general";
 @import "directives";
 @import "dashboard";
+@import "register";
+
 
 
 

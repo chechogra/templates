@@ -1,0 +1,55 @@
+.login-section{
+  font-size: rem(22);
+  .login-container{
+    width: 100%;
+    background-color: $background-color-dark;
+    .credentials-top{
+      background-color: $background-color;
+      width: 100%;
+      text-align: center;
+      position: relative;
+      padding-bottom: 70px;
+      padding-top: 35px;
+      .checkedup-logo{
+        width: 160px;
+        height: auto;
+      }
+      .doctor-rounded{
+        width: 90px;
+        height: 90px;
+        @include prefixer(border-radius,  50%, $vendors);
+        border: 4px solid #fff;
+        position: absolute;
+        bottom: -45px;
+        left: 50%;
+        margin-left: -45px;
+        @include prefixer(box-sizing, border-box, $vendors);
+        background-color: white;
+      }
+    }
+    .credentials-bottom{
+      padding: 80px 25px 50px;
+      max-width: 600px;
+      width: 100%;
+      @include prefixer(box-sizing, border-box, $vendors);
+      md-whiteframe{
+        background-color: #fff;
+        padding: 40px;
+        @include prefixer(border-radius,  7px, $vendors);
+        form{
+          width: 100%;
+          .credentials-actions{
+            #terms_checkbox{
+              color: rgba(0, 0, 0, 0.5);
+              margin-right: 0;
+              font-size: 0.9em;
+            }
+            .md-button{
+              min-width: 180px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

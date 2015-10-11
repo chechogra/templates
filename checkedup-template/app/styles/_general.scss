@@ -5,9 +5,20 @@
 html{ font-size: $default-font-size; }
 body, html{ width: 100%; height: 100%;}
 body{ padding: 0; margin: 0; font-family: $font-stack; font-weight: normal; font-style: normal; font-size: 1em; }
-md-content{
-  &.md-checkedup-theme{  background-color: $background-color !important; }
-}
 .main-view{
-  >section{ min-height: 420px; position: relative; height: 100%;}
+  >section{
+    min-height: 420px;
+    position: relative;
+    height: 100%;
+    background-color: $background-color !important;
+    color: white;
+    &.dark{
+      background-color: $background-color-dark !important;
+    }
+  }
+}
+
+md-input-container.md-checkedup-theme .md-input {
+  color: $input-color;
+  border-color: rgba(0, 0, 0, 0.32);
 }
