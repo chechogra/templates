@@ -2,22 +2,15 @@
     <side-nav></side-nav>
     <div layout="column" class="relative" layout-fill role="main">
         <md-toolbar md-theme="checkedup" class="md-hue-2" tool-bar></md-toolbar>
-        <md-content class="content-dashboard" flex>
-            <div md-scroll-y layout="column">
-                <section id="video_section" class="linear-bg" layout="row" layout-align="center start" layout-wrap>
-                    <div class="video-container">
-                        <video id="video_player"
-                               width="100%"
-                               ng-click="toogleVideoPlayer()"
-                               ng-show="showVideo"
-                               poster="images/video-placeholder.png"
-                               src="https://cu-prod.s3.amazonaws.com/slides/primary/CAT_MOD2_S1_GL2_v2_copy.mp4" type="video/mp4"
-                               webkit-playsinline>
-                            Your browser does not support HTML5 video.
-                        </video>
-                    </div>
-                </section>
-            </div>
+        <md-content class="content-dashboard" flex layout="column">
+            <video id="video_player"
+                   ng-click="toogleVideoPlayer()"
+                   ng-show="showVideo"
+                   poster="images/video-placeholder.png"
+                   src="https://cu-prod.s3.amazonaws.com/slides/primary/CAT_MOD2_S1_GL2_v2_copy.mp4" type="video/mp4"
+                   webkit-playsinline>
+                Your browser does not support HTML5 video.
+            </video>
         </md-content>
         <footer id="footer_steps" ng-init="init()" footer-module></footer>
     </div>
