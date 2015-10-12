@@ -108,8 +108,27 @@
         padding: 10px 0 30px;
         .md-button{
           font-weight: bold;
+          outline: none;
         }
       }
+    }
+  }
+}
+
+.terms-modal{
+  font-size: rem(18);
+  @include breakpoint($lg-desktop-min-width) {
+    max-width: $lg-desktop-modal-max-width;
+  }
+  md-dialog-content{
+    .md-title{ text-align: center; color: #000; font-size: em(24);}
+  }
+  .md-actions{
+    @include justify-content(center);
+    padding-bottom: 20px;
+    padding-top: 10px;
+    button.md-button{
+      outline: 0 !important;
     }
   }
 }

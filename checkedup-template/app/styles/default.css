@@ -24,6 +24,16 @@ body {
   font-style: normal;
   font-size: 1em; }
 
+a:focus, a:active,
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+select::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner {
+  border: 0;
+  outline: 0; }
+
 .main-view > section {
   min-height: 420px;
   position: relative;
@@ -341,6 +351,31 @@ md-sidenav {
       .login-section .login-container .credentials-bottom .secondary-actions, .login-section .register-container .credentials-bottom .secondary-actions, .register-section .login-container .credentials-bottom .secondary-actions, .register-section .register-container .credentials-bottom .secondary-actions {
         padding: 10px 0 30px; }
         .login-section .login-container .credentials-bottom .secondary-actions .md-button, .login-section .register-container .credentials-bottom .secondary-actions .md-button, .register-section .login-container .credentials-bottom .secondary-actions .md-button, .register-section .register-container .credentials-bottom .secondary-actions .md-button {
-          font-weight: bold; }
+          font-weight: bold;
+          outline: none; }
+
+.terms-modal {
+  font-size: 1.125rem; }
+  @media (min-width: 1200px) {
+    .terms-modal {
+      max-width: 900px; } }
+  .terms-modal md-dialog-content .md-title {
+    text-align: center;
+    color: #000;
+    font-size: 1.5em; }
+  .terms-modal .md-actions {
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    padding-bottom: 20px;
+    padding-top: 10px; }
+    .terms-modal .md-actions button.md-button {
+      outline: 0 !important; }
 
 /*# sourceMappingURL=default.css.map */
