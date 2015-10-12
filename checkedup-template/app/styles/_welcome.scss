@@ -13,7 +13,7 @@
   }
 }
 
-#continue_modal{
+#continue_modal, #programs_modal{
   @include breakpoint($lg-desktop-min-width) {
     max-width: $lg-desktop-modal-max-width;
   }
@@ -26,12 +26,14 @@
       color: #000;
       font-size: em(24);
       margin: 0 auto !important;
-      max-width: 400px;
+      &#continue_title{
+        max-width: 400px;
+      }
       @include breakpoint($phone-max-width) {
         font-size: em(22);
       }
     }
-    .continue-actions{
+    .continue-actions, .programs-actions{
       padding-top: 30px;
       @include breakpoint($lg-desktop-min-width) {
         padding-top: 50px;

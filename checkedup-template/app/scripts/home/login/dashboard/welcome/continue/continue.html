@@ -1,9 +1,9 @@
 <md-dialog id="continue_modal" aria-label="Continue Learnig Modal">
     <md-dialog-content>
-        <h2 class="md-title">Looks like you already started learning about Cataract Surgery.</h2>
+        <h2 id="continue_title" class="md-title">Looks like you already started learning about Cataract Surgery.</h2>
         <div class="continue-actions" layout="row" layout-sm="column" layout-align="center center">
-            <md-button class="md-raised md-primary" ng-click="startOver()">Start Over</md-button>
-            <md-button class="md-raised md-accent" ng-click="continueLearning()">Continue</md-button>
+            <md-button class="md-raised md-primary" ng-click="startOver($event)">Start Over</md-button>
+            <md-button class="md-raised md-accent" ng-click="continueLearning($event)">Continue</md-button>
         </div>
     </md-dialog-content>
 </md-dialog>
