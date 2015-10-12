@@ -363,16 +363,35 @@ md-sidenav {
           font-weight: bold;
           outline: none; }
 
-.terms-modal {
+.terms-modal, .trouble-modal, .forgot-modal {
   font-size: 1.125rem; }
   @media (min-width: 1200px) {
-    .terms-modal {
+    .terms-modal, .trouble-modal, .forgot-modal {
       max-width: 900px; } }
-  .terms-modal md-dialog-content .md-title {
+  .terms-modal md-dialog-content .md-title, .trouble-modal md-dialog-content .md-title, .forgot-modal md-dialog-content .md-title {
     text-align: center;
     color: #000;
     font-size: 1.5em; }
-  .terms-modal .md-actions {
+  .terms-modal md-dialog-content #forgot_text, .trouble-modal md-dialog-content #forgot_text, .forgot-modal md-dialog-content #forgot_text {
+    color: #3282B8;
+    margin: 20px auto 30px;
+    max-width: -webkit-calc(900px - 380px);
+    max-width: calc(900px - 380px);
+    text-align: center;
+    line-height: 1.5; }
+  .terms-modal md-dialog-content .md-dialog-content-body, .trouble-modal md-dialog-content .md-dialog-content-body, .forgot-modal md-dialog-content .md-dialog-content-body {
+    padding-left: 30px;
+    padding-right: 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box; }
+    @media (max-width: 599px) {
+      .terms-modal md-dialog-content .md-dialog-content-body, .trouble-modal md-dialog-content .md-dialog-content-body, .forgot-modal md-dialog-content .md-dialog-content-body {
+        padding-left: 10px;
+        padding-right: 10px; } }
+  .terms-modal .md-actions, .trouble-modal .md-actions, .forgot-modal .md-actions {
     -webkit-box-pack: center;
     -moz-box-pack: center;
     box-pack: center;
@@ -384,7 +403,8 @@ md-sidenav {
     -ms-flex-pack: center;
     padding-bottom: 20px;
     padding-top: 10px; }
-    .terms-modal .md-actions button.md-button {
-      outline: 0 !important; }
+    .terms-modal .md-actions button.md-button, .trouble-modal .md-actions button.md-button, .forgot-modal .md-actions button.md-button {
+      outline: 0 !important;
+      min-width: 140px; }
 
 /*# sourceMappingURL=default.css.map */
