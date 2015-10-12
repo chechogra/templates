@@ -3,14 +3,26 @@
 angular.module('checkedUpApp')
     .controller('DashboardCtrl', function ($scope, $mdToast, $stateParams) {
 
-        var videoPlayer = document.getElementById("video_player");
         $scope.showVideo = true;
+        $scope.video_player = document.getElementById('video_player');
+        $scope.video_player_icon = "play_arrow";
+
+        $scope.toogleVideoPlayer = function() {
+
+            if ($scope.video_player.paused){
+                $scope.video_player_icon = "pause";
+                $scope.video_player.play();
+            }else{
+                $scope.video_player_icon = "play_arrow";
+                $scope.video_player.pause();
+            }
+        };
 
         $scope.init = function () {
             if ($stateParams.id) {
                 //TODO: DO magic
             }
-            videoPlayer.onloadedmetadata = function () {
+            $scope.video_player.onloadedmetadata = function () {
                 $scope.showVideo = true;
             };
         };
@@ -29,14 +41,5 @@ angular.module('checkedUpApp')
                 }
             });
         };
-
-
-        $scope.playPause = function () {
-            if (videoPlayer.paused)
-                videoPlayer.play();
-            else
-                videoPlayer.pause();
-        };
-
 
     });

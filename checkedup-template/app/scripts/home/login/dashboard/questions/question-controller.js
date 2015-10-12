@@ -8,7 +8,7 @@ angular.module('checkedUpApp')
         };
 
         $scope.nextQuestion = function(){
-            $scope.$emit('toast', 'Please select an answer to this question');
+            
         };
 
         $scope.selectAnswer = function(answer){
