@@ -1,4 +1,4 @@
-<section layout='row' flex ng-init="init()">
+<section id="questions_section" layout='row' flex ng-init="init()">
     <side-nav></side-nav>
     <div layout="column" class="relative" layout-fill role="main">
         <md-toolbar md-theme="checkedup" class="md-hue-2">
@@ -19,7 +19,30 @@
             </div>
         </md-toolbar>
         <md-content id="content_question" class="content-question" flex layout="column">
-            question
+            <div class="question-container" layout="column">
+                <p class="question-text">Is this a question?</p>
+                <md-grid-list class="question-grid" md-cols-sm="1" md-cols-md="2" md-cols-lg="2" md-cols-gt-lg="2" md-row-height="1:1" md-gutter="15px">
+                    <md-grid-tile class="active">
+                        <div class="question-option" layout="column" layout-align="center center">
+                            <img class="question-img" src="images/question_asset.png" alt=""/>
+                            <h2>Yes</h2>
+                            <div class="check-container">
+
+                            </div>
+                        </div>
+                    </md-grid-tile>
+                    <md-grid-tile>
+                        <div class="question-option" layout="column" layout-align="center center">
+                            <img class="question-img" src="images/question_asset.png" alt=""/>
+                            <h2>No</h2>
+                            <div class="check-container">
+                                <ng-md-icon icon="check"></ng-md-icon>
+                            </div>
+                        </div>
+                    </md-grid-tile>
+                </md-grid-list>
+                <md-button id="next_btn" class="md-raised md-accent" flex ng-click="nextQuestion()">Next</md-button>
+            </div>
         </md-content>
         <footer id="footer_steps" ng-init="init()" footer-module></footer>
     </div>

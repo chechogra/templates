@@ -1,0 +1,70 @@
+#questions_section{
+  font-size: rem(22);
+  #content_question{
+    .question-container{
+      padding: 30px 20px;
+      max-width: 600px;
+      width: 600px;
+      margin: 0 auto;
+      display: block;
+      @include breakpoint($phone-max-width) {
+        max-width: 320px;
+        width: 320px;
+        padding: 20px;
+      }
+      .question-text{
+        color: white;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      #next_btn{
+        margin: 50px auto;
+        width: 180px;
+        min-height: 50px;
+        display: block;
+        font-size: 18px;
+      }
+      .question-grid{
+        md-grid-tile{
+          cursor: pointer;
+          background-color: white;
+          &:hover{
+            opacity: 0.8;
+          }
+          &.active{
+            background-color: $accent-color;
+            .question-option{
+              .check-container{
+                background: #32A877 url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAXEQAAFxEByibzPwAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAG6SURBVEiJ5de9a9VQFADwPhFpsdUqotDBoSDuDhYE0anQQRQqLZVODv41Kh2k4FDFL3Ts6OhgZwU/OqgoaHEQxDoI1ZqfQ+57PvNym5vyXt/gGbLknPxyTm5ySQMD/YhdfVH/S3hgJ54xzuHIP2avYcxhFTewd0dgXMZ3eWS4i7GewjiPLzrjDgZ7AmMGH0pQ2MT1rsO4hPUI2oyvURi7t4FO4lMFCgulcBjVIxyrgc7gfQX4G0sY7YAxjc8hcQXHE9B5f1dvLH7gGoYUV7X8RV8rFDzGoS3QKWnjXcRQqMkP4S4m8TFStIyjJejsFjXN+IWb2N9W14KviC//ZjzBeFvxRXyrqNnAVewp3HALvoDnFReBh9iHCbxLyL+F4ZJJteAGTsi/qVUdPFU9nU3cx8HIuuhYXKfwMnKxLKFD8ldmUdgQkuA2/FUETsEf4EAMjcLhRMrYi7GB2yLjTYLDyZN4kYhmWMBgFVoJh4QJvE6A72E0BU2C2zp/EwF/yjf3ZDQZDoln8bYEXsJIHbQWHJLPFDpfxuG6aG04FJzGM/kXLLpxdB3OsqwROh/bLtqEG3Xgbkbf/iT+AHiXBfVZVuO+AAAAAElFTkSuQmCC') no-repeat center;
+              }
+            }
+          }
+          @include prefixer(border-radius, 8px, $vendors);
+          border: 3px solid white;
+          @include prefixer(box-sizing, border-box, $vendors);
+          .question-option{
+            .question-img{
+              @include prefixer(border-radius, 50%, $vendors);
+              height: 110px;
+              width: 110px;
+              border: 2px solid white;
+            }
+            h2{
+              color: $background-color-dark;
+              font-weight: normal;
+              margin: 12px 0;
+            }
+            .check-container{
+              background-color: #E7E7E7;
+              @include prefixer(border-radius, 50%, $vendors);
+              width: 60px;
+              height: 60px;
+              text-align: center;
+              color: #E7E7E7;
+            }
+          }
+        }
+      }
+    }
+  }
+}

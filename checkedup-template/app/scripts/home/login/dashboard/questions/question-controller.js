@@ -8,7 +8,7 @@ angular.module('checkedUpApp')
         };
 
         $scope.nextQuestion = function(){
-            
+
         };
 
         $scope.selectAnswer = function(answer){
