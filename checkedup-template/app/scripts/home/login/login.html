@@ -5,7 +5,8 @@
             <img class="doctor-rounded" src="images/doctor-img-square.png" alt="Doctor image">
         </div>
         <div class="credentials-bottom">
-            <p>Welcome back to CheckedUp! Don’t have an account? <md-button id="go_register_btn" ng-click="goToRegister()">Click here</md-button></p>
+            <!--<p>Welcome back to CheckedUp! Don’t have an account? <md-button id="go_register_btn" ng-click="goToRegister()">Click here</md-button></p>-->
+            <p><b>Welcome to CheckedUp!</b><br />Sign in to view your education program.</p>
             <md-whiteframe class="md-whiteframe-1dp" flex layout="column" layout-align="center center">
                 <form>
                     <md-input-container>
@@ -17,7 +18,7 @@
                         <input type="password" ng-model="user.password" required>
                     </md-input-container>
                     <div class="credentials-actions" layout="row" layout-sm="column" layout-align="start center" layout-align-sm="center start">
-                        <md-button class="md-raised md-accent" flex-order="1" flex-order-sm="2" ng-click="login()">GET STARTED</md-button>
+                        <md-button class="md-raised md-accent" flex-order="1" flex-order-sm="2" ng-click="login()">Sign In</md-button>
                     </div>
                 </form>
             </md-whiteframe>

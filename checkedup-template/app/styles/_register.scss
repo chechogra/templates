@@ -53,15 +53,9 @@
       }
       p{
         font-size: 0.9em;
-        margin-left: 25px;
-        margin-right: 25px;
-        text-align: justify;
-        text-justify: inter-word;
+        margin-top: 15px;
+        text-align: center;
         @include breakpoint($phone-max-width) {
-          margin-left: 0px;
-          margin-right: 0px;
-          text-align: left;
-          text-justify: inter-word;
           font-size: 0.8em;
         }
         #go_register_btn{

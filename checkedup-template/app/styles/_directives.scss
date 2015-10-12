@@ -57,7 +57,7 @@ md-sidenav{
           .md-list-item-inner{
             min-height: 70px;
             width: 100%;
-            .list-item-account-inner{
+            .list-item-multi-label{
               width: 100%;
               @include display(flex);
               @include align-items(center);
@@ -70,8 +70,8 @@ md-sidenav{
               width: 100%;
               @include ellipsis();
               @include flex(1);
-              &.user-label{
-                color: rgba(50, 128, 186, 0.5);
+              &.small-label{
+                color: #98BFDC;
                 font-size: 0.8em;
                 margin: 4px 0 0;
               }

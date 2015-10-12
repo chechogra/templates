@@ -5,30 +5,32 @@
         </md-toolbar>
         <md-list class="sidenav-list">
             <md-list-item md-ink-ripple="#206ca4" ng-class="{'list-item-active': currentState =='surgery' || currentState == 'dashboard'}" ng-click="navigate('dashboard')">
-                <p>My Surgery</p>
+                <div class="list-item-multi-label">
+                    <p>My Surgery</p>
+                    <p class="small-label">Cataract Surgery</p>
+                </div>
             </md-list-item>
             <md-divider></md-divider>
             <md-list-item md-ink-ripple="#206ca4" ng-class="{'list-item-active': currentState =='doctor'}" ng-click="navigate('doctor')">
-                <p>My Doctor</p>
+                <div class="list-item-multi-label">
+                    <p>My Doctor</p>
+                    <p class="small-label">Dr. Jerry Bosworth</p>
+                </div>
             </md-list-item>
             <md-divider></md-divider>
             <md-list-item md-ink-ripple="#206ca4" ng-class="{'list-item-active': currentState =='account'}" ng-click="navigate('account')">
-                <div class="list-item-account-inner">
+                <div class="list-item-multi-label">
                     <p>My Account</p>
-                    <p class="user-label">Jacob Johnson</p>
+                    <p class="small-label">Jacob Johnson</p>
                 </div>
             </md-list-item>
             <md-divider></md-divider>
         </md-list>
         <md-list class="sidenav-footer">
-            <md-list-item md-ink-ripple="#206ca4" ng-click="navigate('dashboard')">
-                <p>Help</p>
-            </md-list-item>
             <md-divider></md-divider>
-            <md-list-item md-ink-ripple="#206ca4" ng-click="navigate('doctor')">
+            <md-list-item md-ink-ripple="#206ca4" ng-click="navigate('login')">
                 <p>Log Out</p>
             </md-list-item>
-            <md-divider></md-divider>
         </md-list>
     </md-content>
 </md-sidenav>
