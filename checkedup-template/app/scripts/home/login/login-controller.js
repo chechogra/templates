@@ -23,6 +23,7 @@ angular.module('checkedUpApp')
             controller: 'ForgotPasswordDialogCtrl',
             templateUrl: 'scripts/home/login/forgot/forgot-password.html',
             parent: angular.element(document.body),
+            focusOnOpen: false,
             targetEvent: ev,
             clickOutsideToClose:true
           });

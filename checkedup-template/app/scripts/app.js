@@ -77,6 +77,15 @@
                      }
                  }
              })
+             .state('welcome', {
+                 url: '/dashboard/welcome',
+                 views: {
+                     'content@': {
+                         templateUrl: 'scripts/home/login/dashboard/welcome/welcome.html',
+                         controller: 'WelcomeCtrl'
+                     }
+                 }
+             })
              .state('account', {
                  url: '/dashboard/account',
                  views: {

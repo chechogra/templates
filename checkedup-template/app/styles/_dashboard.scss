@@ -1,5 +1,8 @@
-.content-dashboard.md-checkedup-theme{
-  background-color: #216199 !important;
+md-content.md-checkedup-theme{
+  background-color: $background-color;
+  &#content_dashboard{
+    background-color: #216199 !important;
+  }
   video {
     width: 100%;
     height: auto;

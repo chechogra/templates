@@ -219,9 +219,11 @@ md-sidenav {
         #footer_steps > div .step div md-progress-linear .md-container .md-bar {
           height: 7px; }
 
-.content-dashboard.md-checkedup-theme {
-  background-color: #216199 !important; }
-  .content-dashboard.md-checkedup-theme video {
+md-content.md-checkedup-theme {
+  background-color: #3084B8; }
+  md-content.md-checkedup-theme#content_dashboard {
+    background-color: #216199 !important; }
+  md-content.md-checkedup-theme video {
     width: 100%;
     height: auto;
     max-height: 100%;
@@ -229,14 +231,14 @@ md-sidenav {
     background-size: 100% 100%;
     outline: 0;
     opacity: 0.99; }
-  .content-dashboard.md-checkedup-theme md-toast {
+  md-content.md-checkedup-theme md-toast {
     width: 96%;
     max-width: 800px;
     left: 0;
     right: 0;
     margin: 0 auto;
     background-color: #102A59; }
-    .content-dashboard.md-checkedup-theme md-toast.md-bottom {
+    md-content.md-checkedup-theme md-toast.md-bottom {
       bottom: 28px; }
 
 .login-section, .register-section {
@@ -406,5 +408,47 @@ md-sidenav {
     .terms-modal .md-actions button.md-button, .trouble-modal .md-actions button.md-button, .forgot-modal .md-actions button.md-button {
       outline: 0 !important;
       min-width: 140px; }
+
+#welcome_section md-toolbar .md-toolbar-tools h3 {
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal; }
+  @media (max-width: 599px) {
+    #welcome_section md-toolbar .md-toolbar-tools h3 {
+      font-size: 16px; } }
+
+@media (min-width: 1200px) {
+  #continue_modal {
+    max-width: 900px; } }
+@media (min-width: 1200px) {
+  #continue_modal md-dialog-content {
+    padding: 90px 70px; } }
+#continue_modal md-dialog-content .md-title {
+  text-align: center;
+  color: #000;
+  font-size: 1.5em;
+  margin: 0 auto !important;
+  max-width: 400px; }
+  @media (max-width: 599px) {
+    #continue_modal md-dialog-content .md-title {
+      font-size: 1.375em; } }
+#continue_modal md-dialog-content .continue-actions {
+  padding-top: 30px; }
+  @media (min-width: 1200px) {
+    #continue_modal md-dialog-content .continue-actions {
+      padding-top: 50px; } }
+  #continue_modal md-dialog-content .continue-actions button.md-button {
+    outline: 0 !important;
+    min-width: 150px; }
+    @media (min-width: 1200px) {
+      #continue_modal md-dialog-content .continue-actions button.md-button {
+        min-width: 260px;
+        line-height: 46px;
+        font-size: 18px; } }
 
 /*# sourceMappingURL=default.css.map */
