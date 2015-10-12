@@ -1,4 +1,16 @@
-<section layout='row' flex style="height:100%" ng-init="init()">
+<section layout='row' flex ng-init="init()">
+    <side-nav></side-nav>
+    <div layout="column" class="relative" layout-fill role="main">
+        <md-toolbar md-theme="checkedup" class="md-hue-2" tool-bar></md-toolbar>
+        <md-content id="content_dashboard" class="content-dashboard" flex layout="column">
+            question
+        </md-content>
+        <footer id="footer_steps" ng-init="init()" footer-module></footer>
+    </div>
+</section>
+
+
+<!--<section layout='row' flex style="height:100%" ng-init="init()">
     <side-nav style="height:100%"></side-nav>
     <div layout="column" class="relative" layout-fill role="main">
         <md-toolbar md-theme="checkedup" class="md-hue-2">
@@ -35,4 +47,4 @@
         <footer-module></footer-module>
 
     </div>
-</section>
+</section>-->

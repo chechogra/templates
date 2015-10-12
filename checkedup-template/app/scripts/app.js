@@ -86,6 +86,15 @@
                      }
                  }
              })
+             .state('questions',{
+                 url:'/dashboard/questions',
+                 views: {
+                     'content@': {
+                         templateUrl:'scripts/home/login/dashboard/questions/question.html',
+                         controller:'QuestionCtrl'
+                     }
+                 }
+             })
              .state('account', {
                  url: '/dashboard/account',
                  views: {
