@@ -1,35 +1,40 @@
-<section >
-  <md-card>
-    <md-card-content>
+<md-content>
+  <div class="account-info-content" layout="row" layout-align="center start">
+    <md-card flex>
+      <md-card-content>
         <form name="userData">
-          <md-input-container>
-            <label>First Name</label>
-            <input type="text" ng-model="user.firstName" required>
-          </md-input-container>
+          <div layout layout-margin layout-sm="column">
+            <md-input-container flex>
+              <label>First Name</label>
+              <input type="text" ng-model="user.firstName" required>
+            </md-input-container>
+            <md-input-container flex>
+              <label>Last Name</label>
+              <input type="text" ng-model="user.lastName">
+            </md-input-container>
+          </div>
 
+          <div layout layout-margin layout-sm="column">
+            <md-input-container flex>
+              <label>Email</label>
+              <input type="email" ng-model="user.email" required>
+            </md-input-container>
+          </div>
 
-          <md-input-container>
-            <label>Last Name</label>
-            <input type="text" ng-model="user.lastName">
-          </md-input-container>
-
-          <md-input-container>
-            <label>Email</label>
-            <input type="email" ng-model="user.email" required>
-          </md-input-container>
-
-
-          <md-input-container>
-            <label>Password</label>
-            <input type="password" ng-model="user.password">
-          </md-input-container>
-
-
-          <md-button class="green-button" ng-click="updatePatient(userData)">
-                SAVE
-          </md-button>
+          <div layout layout-margin layout-sm="column">
+            <md-input-container flex>
+              <label>Password</label>
+              <input type="password" ng-model="user.password">
+            </md-input-container>
+            <md-input-container flex></md-input-container>
+          </div>
+          <div layout="row" layout-sm="column" layout-margin layout-align-sm="center center">
+            <md-button id="save_account_btn" class="md-raised md-accent" ng-click="updatePatient(userData)">Save</md-button>
+            <md-button id="delete_account_btn" class="md-warn">Delete Account</md-button>
+          </div>
 
         </form>
-    </md-card-content>
-  </md-card>
-</section>
+      </md-card-content>
+    </md-card>
+  </div>
+</md-content>

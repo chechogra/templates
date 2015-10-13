@@ -1,5 +1,6 @@
 #account_section{
   md-tabs.md-checkedup-theme{
+    flex-grow: 1;
     md-tabs-wrapper{
       background-color: $tabs-background;
       .md-tab{
@@ -9,6 +10,26 @@
       }
       md-ink-bar{
         height: 3px;
+      }
+    }
+  }
+}
+
+.account-info-content{
+  padding: 30px;
+  font-size: em(20);
+  md-card{
+    width: 100%;
+    @include prefixer(border-radius, 6px, $vendors);
+    max-width: 750px;
+    #save_account_btn{
+      width: 280px;
+    }
+    #delete_account_btn{
+      color: #F1782B;
+      margin: 0 20px;
+      @include breakpoint($phone-max-width) {
+        margin-top: 40px;
       }
     }
   }

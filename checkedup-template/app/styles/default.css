@@ -595,13 +595,35 @@ md-sidenav {
       #doctor_section #content_doctor .doctor-bottom .doctor-description {
         font-size: 0.875em; }
 
-#account_section md-tabs.md-checkedup-theme md-tabs-wrapper {
-  background-color: #1F6095; }
-  #account_section md-tabs.md-checkedup-theme md-tabs-wrapper .md-tab {
-    color: white;
-    text-transform: none;
-    font-size: 1.2em; }
-  #account_section md-tabs.md-checkedup-theme md-tabs-wrapper md-ink-bar {
-    height: 3px; }
+#account_section md-tabs.md-checkedup-theme {
+  flex-grow: 1; }
+  #account_section md-tabs.md-checkedup-theme md-tabs-wrapper {
+    background-color: #1F6095; }
+    #account_section md-tabs.md-checkedup-theme md-tabs-wrapper .md-tab {
+      color: white;
+      text-transform: none;
+      font-size: 1.2em; }
+    #account_section md-tabs.md-checkedup-theme md-tabs-wrapper md-ink-bar {
+      height: 3px; }
+
+.account-info-content {
+  padding: 30px;
+  font-size: 1.25em; }
+  .account-info-content md-card {
+    width: 100%;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    border-radius: 6px;
+    max-width: 750px; }
+    .account-info-content md-card #save_account_btn {
+      width: 280px; }
+    .account-info-content md-card #delete_account_btn {
+      color: #F1782B;
+      margin: 0 20px; }
+      @media (max-width: 599px) {
+        .account-info-content md-card #delete_account_btn {
+          margin-top: 40px; } }
 
 /*# sourceMappingURL=default.css.map */
