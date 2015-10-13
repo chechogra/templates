@@ -640,4 +640,32 @@ md-sidenav {
     .account-terms-content .account-terms-inner p, .account-terms-content .account-privacy-inner p, .account-privacy-content .account-terms-inner p, .account-privacy-content .account-privacy-inner p {
       font-size: 0.8em; }
 
+@media (min-width: 1200px) {
+  #delete_account_modal {
+    max-width: 900px; } }
+@media (min-width: 1200px) {
+  #delete_account_modal md-dialog-content {
+    padding: 90px 70px; } }
+#delete_account_modal md-dialog-content .md-title {
+  text-align: center;
+  color: #000;
+  font-size: 1.5em;
+  margin: 0 auto !important; }
+  @media (max-width: 599px) {
+    #delete_account_modal md-dialog-content .md-title {
+      font-size: 1.375em; } }
+#delete_account_modal md-dialog-content .delete-account-actions {
+  padding-top: 30px; }
+  @media (min-width: 1200px) {
+    #delete_account_modal md-dialog-content .delete-account-actions {
+      padding-top: 50px; } }
+  #delete_account_modal md-dialog-content .delete-account-actions button.md-button {
+    outline: 0 !important;
+    min-width: 150px; }
+    @media (min-width: 1200px) {
+      #delete_account_modal md-dialog-content .delete-account-actions button.md-button {
+        min-width: 260px;
+        line-height: 46px;
+        font-size: 18px; } }
+
 /*# sourceMappingURL=default.css.map */

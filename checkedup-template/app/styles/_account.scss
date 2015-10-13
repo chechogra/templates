@@ -46,3 +46,38 @@
     p{ font-size: 0.8em; }
   }
 }
+
+#delete_account_modal{
+  @include breakpoint($lg-desktop-min-width) {
+    max-width: $lg-desktop-modal-max-width;
+  }
+  md-dialog-content{
+    @include breakpoint($lg-desktop-min-width) {
+      padding: 90px 70px;
+    }
+    .md-title{
+      text-align: center;
+      color: #000;
+      font-size: em(24);
+      margin: 0 auto !important;
+      @include breakpoint($phone-max-width) {
+        font-size: em(22);
+      }
+    }
+    .delete-account-actions{
+      padding-top: 30px;
+      @include breakpoint($lg-desktop-min-width) {
+        padding-top: 50px;
+      }
+      button.md-button{
+        outline: 0 !important;
+        min-width: 150px;
+        @include breakpoint($lg-desktop-min-width) {
+          min-width: 260px;
+          line-height: 46px;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}

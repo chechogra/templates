@@ -1,9 +1,9 @@
-
-<p>Are you sure you want to delete your account?</p>
-<md-button class="" ng-click="deletePatient()">
-    YES
-</md-button>
-
-<md-button class="green-button">
-    NO
-</md-button>
+<md-dialog id="delete_account_modal" aria-label="Delete Account Modal">
+    <md-dialog-content>
+        <h2 id="delete_account_title" class="md-title">Are you sure you want to delete your account?</h2>
+        <div class="delete-account-actions" layout="row" layout-sm="column" layout-align="center center">
+            <md-button class="md-raised md-primary" ng-click="deletePatient($event)">Yes, Delete Account</md-button>
+            <md-button class="md-raised md-accent close-modal" ng-click="cancel($event)">No</md-button>
+        </div>
+    </md-dialog-content>
+</md-dialog>
