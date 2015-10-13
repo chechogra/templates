@@ -1,5 +1,5 @@
 #doctor_section{
-  font-size: rem(20);
+  font-size: rem(22);
   #content_doctor{
     color: white;
     padding: 30px;
@@ -22,9 +22,9 @@
       }
       .doctor-info{
         .doctor-name{
-          font-size: 1.2em;
+          font-size: 1.1em;
           @include breakpoint($tablet-max-width) {
-            font-size: 1em;
+            font-size: 0.9em;
           }
           @include breakpoint($phone-max-width) {
             margin-top: 25px;
@@ -32,7 +32,7 @@
           }
         }
         .doctor-info-item{
-          font-size: 1.1em;
+          font-size: 1em;
           position: relative;
           padding-left: 40px;
           margin: 15px 0;
@@ -41,7 +41,7 @@
             @include word-wrap;
           }
           @include breakpoint($tablet-max-width) {
-            font-size: 0.9em;
+            font-size: 0.8em;
           }
           .info-icon{
             color: #3FA5F2;
@@ -59,7 +59,7 @@
         margin-top: 10px;
       }
       .doctor-title{
-        font-size: 1.2em;
+        font-size: 1.1em;
         font-weight: normal;
       }
       .doctor-description{
