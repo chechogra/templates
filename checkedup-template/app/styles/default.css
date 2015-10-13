@@ -618,7 +618,11 @@ md-sidenav {
     border-radius: 6px;
     max-width: 750px; }
     .account-info-content md-card #save_account_btn {
-      width: 280px; }
+      width: 280px;
+      min-height: 46px;
+      font-size: 18px;
+      margin-top: 0;
+      margin-bottom: 0; }
     .account-info-content md-card #delete_account_btn {
       color: #F1782B;
       margin: 0 20px; }
