@@ -690,7 +690,7 @@ md-sidenav {
       -ms-border-radius: 6px;
       -o-border-radius: 6px;
       border-radius: 6px;
-      margin: 10px 0; }
+      margin: 25px 0; }
       #preferences_section #content_preferences .preferences-container md-card md-card-content {
         padding: 30px 30px 20px;
         color: #174F7F; }
@@ -710,6 +710,6 @@ md-sidenav {
           #preferences_section #content_preferences .preferences-container md-card md-card-content .checkbox-group md-checkbox {
             margin-left: 0; }
         #preferences_section #content_preferences .preferences-container md-card md-card-content md-divider {
-          margin: 30px 0 40px; }
+          margin: 30px 0 30px; }
 
 /*# sourceMappingURL=default.css.map */

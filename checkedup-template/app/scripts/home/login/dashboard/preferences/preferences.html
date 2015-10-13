@@ -24,52 +24,56 @@
                 <p class="preferences-intro">
                     Feel free to review your preferences below and make any changes you feel necessary. You may also replay any of the educational materials or end your session.
                 </p>
-                <md-card class="card-module" flex>
-                    <md-card-content>
-                        <h4 class="module-subtitle">Module 1</h4>
-                        <p class="module-question">Do you understand your surgery?</p>
-                        <md-radio-group layout="row">
-                            <md-radio-button ng-value="yes" aria-label="Yes">Yes</md-radio-button>
-                            <md-radio-button ng-value="no" aria-label="Yes">No</md-radio-button>
-                        </md-radio-group>
-                    </md-card-content>
-                </md-card>
-                <md-card class="card-module" flex>
-                    <md-card-content>
-                        <h4 class="module-subtitle">Module 2</h4>
-                        <p class="module-question">Which of these do you prefer?</p>
-                        <md-radio-group layout="row">
-                            <md-radio-button ng-value="blade" aria-label="Yes">Blade</md-radio-button>
-                            <md-radio-button ng-value="Laser" aria-label="Yes">Laser</md-radio-button>
-                        </md-radio-group>
-                        <md-divider></md-divider>
-                        <p class="module-question">Which foods do you like?</p>
-                        <div class="checkbox-group" layout="row">
-                            <md-checkbox aria-label="Meat">Meat</md-checkbox>
-                            <md-checkbox aria-label="Fruit">Fruit</md-checkbox>
-                            <md-checkbox aria-label="Vegetables">Vegetables</md-checkbox>
-                        </div>
-                        <md-divider></md-divider>
-                        <p class="module-question">What is the weather like today?</p>
-                        <md-radio-group layout="row">
-                            <md-radio-button ng-value="sunny" aria-label="Sunny">Sunny</md-radio-button>
-                            <md-radio-button ng-value="rainy" aria-label="Rainy">Rainy</md-radio-button>
-                            <md-radio-button ng-value="meh" aria-label="Meh">Meh</md-radio-button>
-                        </md-radio-group>
-                    </md-card-content>
-                </md-card>
-                <md-card class="card-module" flex>
-                    <md-card-content>
-                        <h4 class="module-subtitle">Module 3</h4>
-                        <p class="module-question">Which lens are you interested in?</p>
-                        <div class="checkbox-group" layout="row">
-                            <md-checkbox aria-label="Basic">Basic</md-checkbox>
-                            <md-checkbox aria-label="Multi-Focal">Multi-Focal</md-checkbox>
-                            <md-checkbox aria-label="Toric">Toric</md-checkbox>
-                            <md-checkbox aria-label="Blended">Blended</md-checkbox>
-                        </div>
-                    </md-card-content>
-                </md-card>
+
+                <form action="" class="preferences-form">
+                    <md-card class="card-module" flex>
+                        <md-card-content>
+                            <h4 class="module-subtitle">Module 1</h4>
+                            <p class="module-question">Do you understand your surgery?</p>
+                            <md-radio-group layout="row" layout-sm="column"  ng-model="data.group1">
+                                <md-radio-button flex="25" flex-sm="100"  value="yes" aria-label="Yes">Yes</md-radio-button>
+                                <md-radio-button flex="25" flex-sm="100"  value="no" aria-label="No">No</md-radio-button>
+                            </md-radio-group>
+                        </md-card-content>
+                    </md-card>
+                    <md-card class="card-module" flex>
+                        <md-card-content>
+                            <h4 class="module-subtitle">Module 2</h4>
+                            <p class="module-question">Which of these do you prefer?</p>
+                            <md-radio-group layout="row" layout-sm="column"  ng-model="data.group2">
+                                <md-radio-button flex="25" flex-sm="100"  value="blade" aria-label="Yes">Blade</md-radio-button>
+                                <md-radio-button flex="25" flex-sm="100"  value="Laser" aria-label="Yes">Laser</md-radio-button>
+                            </md-radio-group>
+                            <md-divider></md-divider>
+                            <p class="module-question">Which foods do you like?</p>
+                            <div class="checkbox-group" layout="row" layout-sm="column" >
+                                <md-checkbox flex="25" flex-sm="100"  aria-label="Meat">Meat</md-checkbox>
+                                <md-checkbox flex="25" flex-sm="100"  aria-label="Fruit" ng-checked="{{true}}">Fruit</md-checkbox>
+                                <md-checkbox flex="25" flex-sm="100"  aria-label="Vegetables">Vegetables</md-checkbox>
+                                <md-checkbox flex="25" flex-sm="100"  aria-label="Grains" ng-checked="{{true}}">Grains</md-checkbox>
+                            </div>
+                            <md-divider></md-divider>
+                            <p class="module-question">What is the weather like today?</p>
+                            <md-radio-group layout="row" layout-sm="column"  ng-model="data.group3">
+                                <md-radio-button flex="25" flex-sm="100"  value="sunny" aria-label="Sunny">Sunny</md-radio-button>
+                                <md-radio-button flex="25" flex-sm="100"  value="rainy" aria-label="Rainy">Rainy</md-radio-button>
+                                <md-radio-button flex="25" flex-sm="100"  value="meh" aria-label="Meh">Meh</md-radio-button>
+                            </md-radio-group>
+                        </md-card-content>
+                    </md-card>
+                    <md-card class="card-module" flex>
+                        <md-card-content>
+                            <h4 class="module-subtitle">Module 3</h4>
+                            <p class="module-question">Which lens are you interested in?</p>
+                            <div class="checkbox-group" layout="row" layout-sm="column" >
+                                <md-checkbox flex="25" flex-sm="100"  aria-label="Basic">Basic</md-checkbox>
+                                <md-checkbox flex="25" flex-sm="100"  aria-label="Multi-Focal">Multi-Focal</md-checkbox>
+                                <md-checkbox flex="25" flex-sm="100"  aria-label="Toric">Toric</md-checkbox>
+                                <md-checkbox flex="25" flex-sm="100"  aria-label="Blended">Blended</md-checkbox>
+                            </div>
+                        </md-card-content>
+                    </md-card>
+                </form>
             </div>
         </md-content>
         <footer id="footer_steps" ng-init="init()" footer-module></footer>
