@@ -1,49 +1,39 @@
-
-<side-nav style="height:100%"></side-nav>
-<md-toolbar md-theme="checkedup" class="md-hue-2">
-    <div class="md-toolbar-tools">
-        <md-button class="md-icon-button" ng-click="toggleSidenav('left')" hide-gt-md aria-label="Menu">
-            <ng-md-icon icon="menu"></ng-md-icon>
-        </md-button>
-        <h3>
-            My Doctor
-        </h3>
-        <span flex></span>
-    </div>
-</md-toolbar>
-
-
-<section layout="column" layout-gt-sm="row" ng-init="init()">
-
-    <md-card flex-gt-sm="60">
-
-        <md-card-content>
-
-            <div>
-                <p>{{doctor.prefixName + ". " + doctor.firstName + " " + doctor.lastName}}</p>
+<section id="doctor_section" layout='row' flex ng-init="init()">
+    <side-nav></side-nav>
+    <div layout="column" class="relative" layout-fill role="main">
+        <md-toolbar md-theme="checkedup" class="md-hue-2">
+            <div class="md-toolbar-tools">
+                <md-button class="md-icon-button" ng-click="toggleSidenav('left')" hide-gt-md aria-label="Menu">
+                    <ng-md-icon icon="menu"></ng-md-icon>
+                </md-button>
+                <h3>
+                    My Doctor
+                </h3>
             </div>
-
-            <hr>
-
-             <div layout="column">
-                <span>{{doctor.practice.location.addressLine_1}}</span>
-                <span>here go the doctors email....pending...</span>
-                <span>{{doctor.practice.location.phone}}</span>
-             </div>
-
-        </md-card-content>
-
-    </md-card>
-
-    <img src="" width="200" height="200" alt="pending">
-
+        </md-toolbar>
+        <md-content id="content_doctor" class="content-doctor" flex layout="column" ng-cloak>
+            <div class="doctor-top" layout="row" layout-align="center center" layout-sm="column">
+                <img id="doctor_image" src="images/doctor-img-square.png">
+                <div class="doctor-info">
+                    <h2 class="doctor-name">Dr. Jerry Bosworth</h2>
+                    <div class="doctor-info-item">
+                        <ng-md-icon class="info-icon" icon="location_on"></ng-md-icon>
+                        9388 Saltine Rd. Berryville, WI 65004
+                    </div>
+                    <div class="doctor-info-item email">
+                        <ng-md-icon class="info-icon" icon="email"></ng-md-icon>
+                        bosman@boswortheye.com
+                    </div>
+                    <div class="doctor-info-item">
+                        <ng-md-icon class="info-icon" icon="phone"></ng-md-icon>
+                        1-822-753-9873
+                    </div>
+                </div>
+            </div>
+            <div class="doctor-bottom">
+                <h2 class="doctor-title">Doctor Bio</h2>
+                <p class="doctor-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. sunt in culpa qui officia deserunt mollit anim id est laod tempor incididunt</p>
+            </div>
+        </md-content>
+    </div>
 </section>
-
-<hr>
-
-<div>
-
-    <h2>Doctor Bio</h2>
-    <p>{{doctor.bio}}</p>
-
-</div>

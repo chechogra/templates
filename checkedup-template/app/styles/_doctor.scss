@@ -1,0 +1,70 @@
+#doctor_section{
+  font-size: rem(20);
+  #content_doctor{
+    color: white;
+    padding: 30px;
+    .doctor-top{
+      #doctor_image{
+        @include prefixer(border-radius, 50%, $vendors);
+        width: 230px;
+        height: 230px;
+        margin-right:60px;
+        @include breakpoint($tablet-max-width) {
+          width: 180px;
+          height: 180px;
+          margin-right:35px;
+        }
+        @include breakpoint($phone-max-width) {
+          width: 150px;
+          height: 150px;
+          margin-right:0px;
+        }
+      }
+      .doctor-info{
+        .doctor-name{
+          font-size: 1.2em;
+          @include breakpoint($tablet-max-width) {
+            font-size: 1em;
+          }
+          @include breakpoint($phone-max-width) {
+            margin-top: 25px;
+            text-align: center;
+          }
+        }
+        .doctor-info-item{
+          font-size: 1.1em;
+          position: relative;
+          padding-left: 40px;
+          margin: 15px 0;
+          @include prefixer(box-sizing, border-box, $vendors);
+          &.email{
+            @include word-wrap;
+          }
+          @include breakpoint($tablet-max-width) {
+            font-size: 0.9em;
+          }
+          .info-icon{
+            color: #3FA5F2;
+            position: absolute;
+            left: 0;
+            top: 0;
+          }
+        }
+      }
+    }
+    .doctor-bottom{
+      max-width: 900px;
+      margin: 40px auto;
+      @include breakpoint($phone-max-width) {
+        margin-top: 10px;
+      }
+      .doctor-title{
+        font-size: 1.2em;
+        font-weight: normal;
+      }
+      .doctor-description{
+        font-size: em(14);
+      }
+    }
+  }
+}

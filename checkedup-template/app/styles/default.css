@@ -521,4 +521,71 @@ md-content.md-checkedup-theme {
         text-align: center;
         color: #E7E7E7; }
 
+#doctor_section {
+  font-size: 1.25rem; }
+  #doctor_section #content_doctor {
+    color: white;
+    padding: 30px; }
+    #doctor_section #content_doctor .doctor-top #doctor_image {
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      border-radius: 50%;
+      width: 230px;
+      height: 230px;
+      margin-right: 60px; }
+      @media (max-width: 959px) {
+        #doctor_section #content_doctor .doctor-top #doctor_image {
+          width: 180px;
+          height: 180px;
+          margin-right: 35px; } }
+      @media (max-width: 599px) {
+        #doctor_section #content_doctor .doctor-top #doctor_image {
+          width: 150px;
+          height: 150px;
+          margin-right: 0px; } }
+    #doctor_section #content_doctor .doctor-top .doctor-info .doctor-name {
+      font-size: 1.2em; }
+      @media (max-width: 959px) {
+        #doctor_section #content_doctor .doctor-top .doctor-info .doctor-name {
+          font-size: 1em; } }
+      @media (max-width: 599px) {
+        #doctor_section #content_doctor .doctor-top .doctor-info .doctor-name {
+          margin-top: 25px;
+          text-align: center; } }
+    #doctor_section #content_doctor .doctor-top .doctor-info .doctor-info-item {
+      font-size: 1.1em;
+      position: relative;
+      padding-left: 40px;
+      margin: 15px 0;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      -o-box-sizing: border-box;
+      box-sizing: border-box; }
+      #doctor_section #content_doctor .doctor-top .doctor-info .doctor-info-item.email {
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-all; }
+      @media (max-width: 959px) {
+        #doctor_section #content_doctor .doctor-top .doctor-info .doctor-info-item {
+          font-size: 0.9em; } }
+      #doctor_section #content_doctor .doctor-top .doctor-info .doctor-info-item .info-icon {
+        color: #3FA5F2;
+        position: absolute;
+        left: 0;
+        top: 0; }
+    #doctor_section #content_doctor .doctor-bottom {
+      max-width: 900px;
+      margin: 40px auto; }
+      @media (max-width: 599px) {
+        #doctor_section #content_doctor .doctor-bottom {
+          margin-top: 10px; } }
+      #doctor_section #content_doctor .doctor-bottom .doctor-title {
+        font-size: 1.2em;
+        font-weight: normal; }
+      #doctor_section #content_doctor .doctor-bottom .doctor-description {
+        font-size: 0.875em; }
+
 /*# sourceMappingURL=default.css.map */

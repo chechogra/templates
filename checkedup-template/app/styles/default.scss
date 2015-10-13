@@ -18,6 +18,7 @@ $accent-color: #2DB276;
 $modal-max-width: 700px;
 $credentials-container-width: 700px;
 $phone-max-width: (max-width 599px);
+$tablet-max-width: (max-width 959px);
 $lg-desktop-min-width: 1200px;
 $lg-desktop-modal-max-width: 900px;
 
@@ -27,6 +28,7 @@ $lg-desktop-modal-max-width: 900px;
 @import "register";
 @import "welcome";
 @import "questions";
+@import "doctor";
 
 
 
