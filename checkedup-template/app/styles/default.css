@@ -588,4 +588,13 @@ md-content.md-checkedup-theme {
       #doctor_section #content_doctor .doctor-bottom .doctor-description {
         font-size: 0.875em; }
 
+#account_section md-tabs.md-checkedup-theme md-tabs-wrapper {
+  background-color: #1F6095; }
+  #account_section md-tabs.md-checkedup-theme md-tabs-wrapper .md-tab {
+    color: white;
+    text-transform: none;
+    font-size: 1.2em; }
+  #account_section md-tabs.md-checkedup-theme md-tabs-wrapper md-ink-bar {
+    height: 3px; }
+
 /*# sourceMappingURL=default.css.map */

@@ -1,0 +1,15 @@
+#account_section{
+  md-tabs.md-checkedup-theme{
+    md-tabs-wrapper{
+      background-color: $tabs-background;
+      .md-tab{
+        color: white;
+        text-transform: none;
+        font-size: 1.2em;
+      }
+      md-ink-bar{
+        height: 3px;
+      }
+    }
+  }
+}

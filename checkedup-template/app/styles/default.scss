@@ -13,6 +13,7 @@ $background-color-dark: #18517F;
 $background-color-darker: #102A59;
 $hover-color-sidenav: #E9F1F8;
 $dark-primary-color: #E9F1F8;
+$tabs-background: #1F6095;
 $input-color: #3282B8;
 $accent-color: #2DB276;
 $modal-max-width: 700px;
@@ -29,7 +30,7 @@ $lg-desktop-modal-max-width: 900px;
 @import "welcome";
 @import "questions";
 @import "doctor";
-
+@import "account";
 
 
 
