@@ -626,4 +626,18 @@ md-sidenav {
         .account-info-content md-card #delete_account_btn {
           margin-top: 40px; } }
 
+.account-terms-content, .account-privacy-content {
+  padding: 30px;
+  font-size: 1.25em;
+  color: white; }
+  .account-terms-content .account-terms-inner, .account-terms-content .account-privacy-inner, .account-privacy-content .account-terms-inner, .account-privacy-content .account-privacy-inner {
+    width: 100%;
+    max-width: 1000px; }
+    .account-terms-content .account-terms-inner h3, .account-terms-content .account-privacy-inner h3, .account-privacy-content .account-terms-inner h3, .account-privacy-content .account-privacy-inner h3 {
+      font-weight: normal;
+      font-size: 1.3em;
+      margin-top: 10px; }
+    .account-terms-content .account-terms-inner p, .account-terms-content .account-privacy-inner p, .account-privacy-content .account-terms-inner p, .account-privacy-content .account-privacy-inner p {
+      font-size: 0.8em; }
+
 /*# sourceMappingURL=default.css.map */
