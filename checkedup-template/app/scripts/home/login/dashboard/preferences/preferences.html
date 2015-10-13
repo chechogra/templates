@@ -1,0 +1,117 @@
+<section id="preferences_section" layout='row' flex ng-init="init()">
+    <side-nav></side-nav>
+    <div layout="column" class="relative" layout-fill role="main">
+        <md-toolbar md-theme="checkedup" class="md-hue-2">
+            <div class="md-toolbar-tools">
+                <md-button class="md-icon-button" ng-click="toggleSidenav('left')" hide-gt-md aria-label="Menu">
+                    <ng-md-icon icon="menu"></ng-md-icon>
+                </md-button>
+                <h3>
+                    Back
+                </h3>
+                <span flex></span>
+                <md-button class="md-fab md-primary md-mini" ng-click="prevQuestion()" aria-label="Previous Question">
+                    <ng-md-icon icon="arrow_back"></ng-md-icon>
+                </md-button>
+                <md-button class="md-fab md-primary md-mini" ng-click="nextQuestion()" aria-label="Next Question">
+                    <ng-md-icon icon="arrow_forward"></ng-md-icon>
+                </md-button>
+            </div>
+        </md-toolbar>
+        <md-content id="content_preferences" class="content-preferences" flex layout="column" layout-align="start center">
+            <div class="preferences-container" layout="column">
+                <h2 class="preferences-title">Congratulations Jacob! You have finished learning about Cataract Surgery.</h2>
+                <p class="preferences-intro">
+                    Feel free to review your preferences below and make any changes you feel necessary. You may also replay any of the educational materials or end your session.
+                </p>
+                <md-card class="card-module" flex>
+                    <md-card-content>
+                        <h4 class="module-subtitle">Module 1</h4>
+                        <p class="module-question">Do you understand your surgery?</p>
+                        <md-radio-group layout="row">
+                            <md-radio-button ng-value="yes" aria-label="Yes">Yes</md-radio-button>
+                            <md-radio-button ng-value="no" aria-label="Yes">No</md-radio-button>
+                        </md-radio-group>
+                    </md-card-content>
+                </md-card>
+                <md-card class="card-module" flex>
+                    <md-card-content>
+                        <h4 class="module-subtitle">Module 2</h4>
+                        <p class="module-question">Which of these do you prefer?</p>
+                        <md-radio-group layout="row">
+                            <md-radio-button ng-value="blade" aria-label="Yes">Blade</md-radio-button>
+                            <md-radio-button ng-value="Laser" aria-label="Yes">Laser</md-radio-button>
+                        </md-radio-group>
+                        <md-divider></md-divider>
+                        <p class="module-question">Which foods do you like?</p>
+                        <div class="checkbox-group" layout="row">
+                            <md-checkbox aria-label="Meat">Meat</md-checkbox>
+                            <md-checkbox aria-label="Fruit">Fruit</md-checkbox>
+                            <md-checkbox aria-label="Vegetables">Vegetables</md-checkbox>
+                        </div>
+                        <md-divider></md-divider>
+                        <p class="module-question">What is the weather like today?</p>
+                        <md-radio-group layout="row">
+                            <md-radio-button ng-value="sunny" aria-label="Sunny">Sunny</md-radio-button>
+                            <md-radio-button ng-value="rainy" aria-label="Rainy">Rainy</md-radio-button>
+                            <md-radio-button ng-value="meh" aria-label="Meh">Meh</md-radio-button>
+                        </md-radio-group>
+                    </md-card-content>
+                </md-card>
+                <md-card class="card-module" flex>
+                    <md-card-content>
+                        <h4 class="module-subtitle">Module 3</h4>
+                        <p class="module-question">Which lens are you interested in?</p>
+                        <div class="checkbox-group" layout="row">
+                            <md-checkbox aria-label="Basic">Basic</md-checkbox>
+                            <md-checkbox aria-label="Multi-Focal">Multi-Focal</md-checkbox>
+                            <md-checkbox aria-label="Toric">Toric</md-checkbox>
+                            <md-checkbox aria-label="Blended">Blended</md-checkbox>
+                        </div>
+                    </md-card-content>
+                </md-card>
+            </div>
+        </md-content>
+        <footer id="footer_steps" ng-init="init()" footer-module></footer>
+    </div>
+</section>
+
+
+<!--<section layout='row' flex style="height:100%" ng-init="init()">
+    <side-nav style="height:100%"></side-nav>
+    <div layout="column" class="relative" layout-fill role="main">
+        <md-toolbar md-theme="checkedup" class="md-hue-2">
+            <div class="md-toolbar-tools">
+                <md-button class="md-icon-button" ng-click="toggleSidenav('left')" hide-gt-md aria-label="Menu">
+                    <ng-md-icon icon="menu"></ng-md-icon>
+                </md-button>
+                <h3>
+                    Dashboard
+                </h3>
+                <md-button id="back" ng-click="prevQuestion()">Prev</md-button>
+                <md-button id="next" ng-click="nextQuestion()">Next</md-button>
+                <span flex></span>
+            </div>
+        </md-toolbar>
+        <md-content class="content-dashboard" layout="column" layout-align="center center" flex>
+            {{questions[currentQuestion].prompt}}
+            <div layout="row" layout-align="center center">
+                <md-card ng-repeat="answer in answers track by $index">
+                    <md-card-content ng-class="{'selected-answer':answer.selected}" ng-click="selectAnswer(answer)">
+                        <div layout="column" layout-align="center center">
+                            <img ng-src="{{answer.image}}">
+                            <md-button>{{answer.name}}</md-button>
+                            <div ng-class="active">check</div>
+
+                        </div>
+                    </md-card-content>
+                </md-card>
+            </div>
+            <md-button class="green-button" id="nextQuestion" ng-click="nextQuestion()">Next</md-button>
+
+        </md-content>
+
+        <footer-module></footer-module>
+
+    </div>
+</section>-->

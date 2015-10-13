@@ -672,4 +672,44 @@ md-sidenav {
         line-height: 46px;
         font-size: 18px; } }
 
+#preferences_section {
+  font-size: 1.375rem; }
+  #preferences_section #content_preferences .preferences-container {
+    width: 100%;
+    max-width: 850px;
+    padding: 30px; }
+    #preferences_section #content_preferences .preferences-container .preferences-title {
+      color: white;
+      font-size: 1em; }
+    #preferences_section #content_preferences .preferences-container .preferences-intro {
+      color: white;
+      font-size: 0.8125em; }
+    #preferences_section #content_preferences .preferences-container md-card {
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      -ms-border-radius: 6px;
+      -o-border-radius: 6px;
+      border-radius: 6px;
+      margin: 10px 0; }
+      #preferences_section #content_preferences .preferences-container md-card md-card-content {
+        padding: 30px 30px 20px;
+        color: #174F7F; }
+        #preferences_section #content_preferences .preferences-container md-card md-card-content h4 {
+          margin: 0;
+          color: #90ABC2;
+          font-weight: normal;
+          font-size: 0.75em; }
+        #preferences_section #content_preferences .preferences-container md-card md-card-content p {
+          margin: 10px 0 5px; }
+        #preferences_section #content_preferences .preferences-container md-card md-card-content md-radio-group {
+          font-size: 0.8125em; }
+          #preferences_section #content_preferences .preferences-container md-card md-card-content md-radio-group md-radio-button {
+            margin-left: 0; }
+        #preferences_section #content_preferences .preferences-container md-card md-card-content .checkbox-group {
+          font-size: 0.8125em; }
+          #preferences_section #content_preferences .preferences-container md-card md-card-content .checkbox-group md-checkbox {
+            margin-left: 0; }
+        #preferences_section #content_preferences .preferences-container md-card md-card-content md-divider {
+          margin: 30px 0 40px; }
+
 /*# sourceMappingURL=default.css.map */

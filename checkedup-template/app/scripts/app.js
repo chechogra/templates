@@ -95,6 +95,15 @@
                      }
                  }
              })
+             .state('preferences',{
+                 url:'/dashboard/preferences',
+                 views: {
+                     'content@': {
+                         templateUrl:'scripts/home/login/dashboard/preferences/preferences.html',
+                         controller:'PreferencesCtrl'
+                     }
+                 }
+             })
              .state('account', {
                  url: '/dashboard/account',
                  views: {

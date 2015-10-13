@@ -1,0 +1,50 @@
+#preferences_section{
+  font-size: rem(22);
+  #content_preferences{
+    .preferences-container{
+      width: 100%;
+      max-width: 850px;
+      padding: 30px;
+      .preferences-title{
+        color: white;
+        font-size: em(16);
+      }
+      .preferences-intro{
+        color: white;
+        font-size: em(13);
+      }
+      md-card{
+        @include prefixer(border-radius, 6px, $vendors);
+        margin: 10px 0;
+        md-card-content{
+          padding: 30px 30px 20px;
+          color: #174F7F;
+          h4{
+            margin: 0;
+            color: #90ABC2;
+            font-weight: normal;
+            font-size: em(12);
+          }
+          p{
+            margin: 10px 0 5px;
+          }
+          md-radio-group{
+            font-size: em(13);
+            md-radio-button{
+              margin-left: 0;
+            }
+          }
+          .checkbox-group{
+            font-size: em(13);
+            md-checkbox{
+              margin-left: 0;
+            }
+          }
+          md-divider{
+            margin: 30px 0 30px;
+          }
+        }
+      }
+    }
+  }
+}
